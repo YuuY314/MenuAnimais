@@ -2,8 +2,6 @@
 
 ## Noções Básicas
 
----
-
 Luan, você terá que ter no mínimo a ferramenta Git instalada
 
 Após isso, tenha em mente os comandos básicos para clonar o projeto, adicionar quaisquer mudanças, commitar e pushar
@@ -25,8 +23,6 @@ Assim que abrir o Git, copie estes arquivos, se não tiver eles ainda, usando o 
 Creio que toda esta etapa inicial não será mais repetida (a não ser que esteja usando computadores públicos)
 
 ## Comandos Utilizados
-
----
 
 OBS: Toda a configuração inicial foi feita, não se preocupe com isso
 
