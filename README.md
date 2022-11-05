@@ -39,8 +39,8 @@ OBS2: Quando seus arquivos estiverem desatualizados comparados aos do repositór
 ## Passo a Passo
 
 ```git
-    git add . ou git add *                    (adicionar todos os arquivos, até as mudanças efetuadas nos arquivos)
-    git status                                (opcional, mas sempre bom conferir o que está rolando)
-    git commit -m "[nome do commit]"          (registrar o commit)
-    git push origin main                      (atualizar o repositório no Github)
+    git add . ou git add *           (adicionar todos os arquivos, até as mudanças efetuadas nos arquivos)
+    git status                       (opcional, mas sempre bom conferir o que está rolando)
+    git commit -m "[nome do commit]" (registrar o commit)
+    git push origin main             (atualizar o repositório no Github)
 ```
