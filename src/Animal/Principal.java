@@ -3,15 +3,11 @@ import java.util.*;
 public class Principal {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
-        int opcao, vezes = 1;
+        int opcao;
         boolean rodando = true;
         
         while(rodando){
-            if(vezes == 1){
-                System.out.println("MENU");
-            } else {
-                System.out.println("\nMENU");
-            }
+            System.out.println("MENU");
             System.out.println("\n1 - Cadastrar");
             System.out.println("2 - Mostrar");
             System.out.println("3 - Sair");

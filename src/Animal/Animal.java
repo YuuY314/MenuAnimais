@@ -1,26 +1,26 @@
 package Animal;
 public class Animal {
     protected String nome;
-    protected String classe; //ex
-    protected String habitat;
+    protected String classe; //ex: Peixes, Anfíbios, Répteis, Aves e Mamíferos
+    protected String ordem; //ex: Primatas, Ovinos, Suínos, Equinos, Bovinos, etc...
     protected double tamanho;
     protected double peso;
     protected String cor;
+    protected String habitat;
+    protected String dieta; //ex: Carnívoro, Herbívoro e Onívoro
 
-    public Animal() {}
-    public Animal(String especie, String habitat, String classe, double tamanho, double peso) {
-        this.especie = especie;
-        this.habitat = habitat;
-        this.tamanho = tamanho;
-        this.peso = peso;
+    Animal(){}
+
+    public String getNome() {
+        return nome;
     }
 
-    public String getEspecie() {
-        return especie;
+    public String getClasse() {
+        return classe;
     }
 
-    public String getHabitat() {
-        return habitat;
+    public String getOrdem() {
+        return ordem;
     }
 
     public double getTamanho() {
@@ -35,12 +35,24 @@ public class Animal {
         return cor;
     }
 
-    public void setEspecie(String especie) {
-        this.especie = especie;
+    public String getHabitat() {
+        return habitat;
+    }
+    
+    public String getDieta() {
+        return dieta;
     }
 
-    public void setHabitat(String habitat) {
-        this.habitat = habitat;
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setClasse(String classe) {
+        this.classe = classe;
+    }
+
+    public void setOrdem(String ordem) {
+        this.ordem = ordem;
     }
 
     public void setTamanho(double tamanho) {
@@ -54,12 +66,20 @@ public class Animal {
     public void setCor(String cor) {
         this.cor = cor;
     }
-    
-    public void andar() {
-        System.out.println("Animal andando...");
+
+    public void setHabitat(String habitat) {
+        this.habitat = habitat;
     }
     
-    public void comer() {
-        System.out.println("Animal comendo...");
+    public void setDieta(String dieta) {
+        this.dieta = dieta;
+    }
+    
+    public void andar(){
+        System.out.println("Andando...");
+    }
+    
+    public void comer(){
+        System.out.println("Comendo...");
     }
 }
