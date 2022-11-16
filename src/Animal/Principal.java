@@ -58,12 +58,17 @@ public class Principal {
                     animal.setClasse(read.nextLine());
                     System.out.print("Digite a ordem do animal: ");
                     animal.setOrdem(read.nextLine());
-                    /*System.out.print("Deseja colocar a ordem do animal? Sim ou Não?");;
-                    resposta = read.nextLine();
-                    if(resposta.equalsIgnoreCase("sim") || resposta.equalsIgnoreCase("s")){
-                        System.out.println("Digite a ordem do animal: ");
-                        animal.get
-                    }*/
+                    System.out.print("Tamanho do animal em metros: ");
+                    animal.setTamanho(read.nextDouble());
+                    System.out.print("Peso do animal em quilos: ");
+                    animal.setPeso(read.nextDouble());
+                    read.nextLine();
+                    System.out.print("Digite a cor do animal: ");
+                    animal.setCor(read.nextLine());
+                    System.out.print("Digite o habitat do animal: ");
+                    animal.setHabitat(read.nextLine());
+                    System.out.print("Digite a dieta do animal: ");
+                    animal.setDieta(read.nextLine());
                 } else if(opcao == 2){
                     System.out.println("\nSelecione a classe do animal:");
                     System.out.println("\n1 - Mamífero");
@@ -103,6 +108,12 @@ public class Principal {
                     System.out.println("Nome do Animal: "+animal.getNome());
                     System.out.println("Classe do Animal: "+animal.getClasse());
                     System.out.println("Ordem do Animal: "+animal.getOrdem());
+                    System.out.println("Tamanho do Animal: "+animal.getTamanho()+"m");
+                    System.out.println("Peso do Animal: "+animal.getPeso()+"kg");
+                    System.out.println("Cor do Animal: "+animal.getCor());
+                    System.out.println("Habitat do Animal: "+animal.getHabitat());
+                    System.out.println("Dieta do Animal: "+animal.getDieta());
+                    read.nextLine();
                 }
                 
             } else {
