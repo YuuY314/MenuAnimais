@@ -44,15 +44,27 @@ public class Animal {
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        if(nome.equals("")){
+            this.nome = "Não informado";
+        } else {
+            this.nome = nome;
+        }
     }
 
     public void setClasse(String classe) {
-        this.classe = classe;
+        if(classe.equals("")){
+            this.classe = "Não informado";
+        } else {
+            this.classe = classe;
+        }
     }
 
     public void setOrdem(String ordem) {
-        this.ordem = ordem;
+        if(ordem.equals("")){
+            this.ordem = "Não informado";
+        } else {
+            this.ordem = ordem;
+        }
     }
 
     public void setTamanho(double tamanho) {
