@@ -68,23 +68,44 @@ public class Animal {
     }
 
     public void setTamanho(double tamanho) {
-        this.tamanho = tamanho;
+      if(tamanho==0){
+          this.tamanho = Double.toString(tamanho);
+        } else {
+            this.tamanho = tamanho; 
+        }
     }
 
     public void setPeso(double peso) {
-        this.peso = peso;
+        if(peso==0){
+            this.peso =0;
+            System.out.print("Peso não informado");
+        } else {
+            this.peso = peso; 
+        }
     }
 
     public void setCor(String cor) {
-        this.cor = cor;
+        if(cor.equals("")){
+            this.cor = "Não informado";
+        } else {
+            this.cor = cor;     
+        }
     }
 
     public void setHabitat(String habitat) {
-        this.habitat = habitat;
+        if(habitat.equals("")){
+            this.habitat = "Não informado";
+        } else {
+            this.habitat = habitat;        
+        }
     }
     
     public void setDieta(String dieta) {
-        this.dieta = dieta;
+        if(dieta.equals("")){
+            this.dieta = "Não informado";
+        } else {
+            this.dieta = dieta;     
+        }
     }
     
     public void andar(){
