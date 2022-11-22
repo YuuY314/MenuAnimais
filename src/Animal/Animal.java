@@ -68,16 +68,16 @@ public class Animal {
     }
 
     public void setTamanho(double tamanho) {
-      if(tamanho==0){
-          this.tamanho = Double.toString(tamanho);
+      if(tamanho == 0){
+          this.tamanho = 0;
         } else {
             this.tamanho = tamanho; 
         }
     }
 
     public void setPeso(double peso) {
-        if(peso==0){
-            this.peso =0;
+        if(peso == 0){
+            this.peso = 0;
             System.out.print("Peso não informado");
         } else {
             this.peso = peso; 

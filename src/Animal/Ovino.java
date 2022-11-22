@@ -1,12 +1,16 @@
 package Animal;
 public class Ovino extends Mamifero {
-    private boolean chifre;
+    private String chifre;
 
-    public boolean isChifre() {
+    public String getChifre() {
         return chifre;
     }
 
-    public void setChifre(boolean chifre) {
-        this.chifre = chifre;
+    public void setChifre(String chifre) {
+        if(chifre.equalsIgnoreCase("SIM") || chifre.equals("S")){
+            this.chifre = "Sim";
+        } else {
+            this.chifre = "Não";
+        }
     }
 }
