@@ -78,7 +78,6 @@ public class Animal {
     public void setPeso(double peso) {
         if(peso == 0){
             this.peso = 0;
-            System.out.print("Peso não informado");
         } else {
             this.peso = peso; 
         }

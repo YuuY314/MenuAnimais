@@ -48,6 +48,7 @@ public class Principal{
                 read.nextLine();
 
                 if(opcao == 1){
+                    System.out.println("\n| ANIMAL |");
                     System.out.println("\nOBS: Se quiser não cadastrar uma das informações, dê ENTER (em caso de números, digite 0)");
                     System.out.print("\nDigite o nome do animal: ");
                     animal.setNome(read.nextLine());
@@ -84,6 +85,7 @@ public class Principal{
                     read.nextLine();
                     
                     if(opcao == 1){
+                        System.out.println("\n| MAMÍFERO |");
                         System.out.println("\nOBS: Se quiser não cadastrar uma das informações, dê ENTER (em caso de números, digite 0)");
                         System.out.print("\nDigite o nome do animal: ");
                         mamifero.setNome(read.nextLine());
@@ -109,6 +111,7 @@ public class Principal{
                         System.out.print("Digite o tipo de pelo do mamífero: ");
                         mamifero.setTipoDePelo(read.nextLine());
                     } else if(opcao == 2){
+                        System.out.println("\n| REPTIL |");
                         System.out.println("\nOBS: Se quiser não cadastrar uma das informações, dê ENTER (em caso de números, digite 0)");
                         System.out.print("\nDigite o nome do animal: ");
                         reptil.setNome(read.nextLine());
@@ -149,6 +152,7 @@ public class Principal{
                     read.nextLine();
                     
                     if(opcao == 1){
+                        System.out.println("\n| OVINO |");
                         System.out.println("\nOBS: Se quiser não cadastrar uma das informações, dê ENTER (em caso de números, digite 0)");
                         System.out.print("\nDigite o nome do animal: ");
                         ovino.setNome(read.nextLine());
@@ -185,6 +189,7 @@ public class Principal{
                         
                         ovino.setChifre(resposta);
                     } else if(opcao == 2){
+                        System.out.println("\n| PRIMATA |");
                         System.out.println("\nOBS: Se quiser não cadastrar uma das informações, dê ENTER (em caso de números, digite 0)");
                         System.out.print("\nDigite o nome do animal: ");
                         primata.setNome(read.nextLine());
@@ -232,6 +237,7 @@ public class Principal{
                     read.nextLine();
                     
                     if(opcao == 1){
+                        System.out.println("\n| COBRA |");
                         System.out.println("\nOBS: Se quiser não cadastrar uma das informações, dê ENTER (em caso de números, digite 0)");
                         System.out.println("\nNome do animal já definido.");
                         cobra.setNome("Cobra");
@@ -276,6 +282,7 @@ public class Principal{
                         
                         cobra.setSensorDeCalor(resposta);
                     } else if(opcao == 2){
+                        System.out.println("\n| JACARÉ |");
                         System.out.println("\nOBS: Se quiser não cadastrar uma das informações, dê ENTER (em caso de números, digite 0)");
                         System.out.println("\nNome do animal já definido.");
                         jacare.setNome("Jacaré");
@@ -301,6 +308,7 @@ public class Principal{
                         System.out.print("\nDigite a quantidade de garras do jacaré: ");
                         jacare.setNumeroGarras(read.nextInt());
                     } else if(opcao == 3){
+                        System.out.println("\n| OVELHA |");
                         System.out.println("\nOBS: Se quiser não cadastrar uma das informações, dê ENTER (em caso de números, digite 0)");
                         System.out.println("\nNome do animal já definido.");
                         ovelha.setNome("Ovelha");
@@ -376,6 +384,7 @@ public class Principal{
                     System.out.println("Cor do Animal: "+animal.getCor());
                     System.out.println("Habitat do Animal: "+animal.getHabitat());
                     System.out.println("Dieta do Animal: "+animal.getDieta());
+                    System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
                     read.nextLine();
                 } else if(opcao == 2){
                     System.out.println("\nSelecione a classe que deseja mostrar:");
