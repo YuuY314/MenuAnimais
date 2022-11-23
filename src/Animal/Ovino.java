@@ -7,10 +7,6 @@ public class Ovino extends Mamifero {
     }
 
     public void setChifre(String chifre) {
-        if(chifre.equalsIgnoreCase("SIM") || chifre.equals("S")){
-            this.chifre = "Sim";
-        } else {
-            this.chifre = "Não";
-        }
+        this.chifre = chifre;
     }
 }

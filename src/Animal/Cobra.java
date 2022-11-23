@@ -1,21 +1,21 @@
 package Animal;
 public class Cobra extends Reptil{
-    private boolean peconha;
-    private boolean sensorDeCalor;
+    private String peconha;
+    private String sensorDeCalor;
 
-    public boolean isPeconha() {
+    public String getPeconha() {
         return peconha;
     }
 
-    public boolean isSensorDeCalor() {
+    public String getSensorDeCalor() {
         return sensorDeCalor;
     }
 
-    public void setPeconha(boolean peconha) {
+    public void setPeconha(String peconha) {
         this.peconha = peconha;
     }
 
-    public void setSensorDeCalor(boolean sensorDeCalor) {
+    public void setSensorDeCalor(String sensorDeCalor) {
         this.sensorDeCalor = sensorDeCalor;
     }
 }
