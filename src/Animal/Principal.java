@@ -19,15 +19,19 @@ public class Principal{
             System.out.println("MENU");
             System.out.println("\n1 - Cadastrar");
             System.out.println("2 - Mostrar");
-            System.out.println("3 - Sair");
+            System.out.println("3 - Ações");
+            System.out.println("4 - Créditos");
+            System.out.println("5 - Sair");
             System.out.print("\nOpção: ");
             opcao = read.nextInt();
 
-            while(opcao < 1 || opcao > 3){
+            while(opcao < 1 || opcao > 5){
                 System.out.println("\nDigite novamente.");
                 System.out.print("\nOpção: ");
                 opcao = read.nextInt();
             }
+            
+            read.nextLine();
             
             if(opcao == 1){
                 System.out.println("\nSelecione o que deseja cadastrar:");
@@ -523,10 +527,16 @@ public class Principal{
                         System.out.println("\nNúmero de Mamas do Mamífero: "+ovelha.getNumeroMamas());
                         System.out.println("Tipo de Pelo do Mamífero: "+ovelha.getTipoDePelo());
                         System.out.println("\nO ovino tem chifre? "+ovelha.getChifre());
-                        System.out.println("\nA ovelha tem lã? "+ovelha.getLa());
+                        System.out.println("\nA ovelha está com lã? "+ovelha.getLa());
                         read.nextLine();
                     }
                 }
+            } else if(opcao == 3){
+                
+            } else if(opcao == 4){
+                System.out.println("\nPrograma feito por Luan Gibson e Rafael Yu");
+                System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                read.nextLine();
             } else {
                 System.out.println("\nVocê saiu.");
                 rodando = false;

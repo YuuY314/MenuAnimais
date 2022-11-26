@@ -28,15 +28,19 @@ public class PrincipalArrayList{
             System.out.println("\nMENU");
             System.out.println("\n1 - Cadastrar");
             System.out.println("2 - Mostrar");
-            System.out.println("3 - Sair");
+            System.out.println("3 - Ações");
+            System.out.println("4 - Créditos");
+            System.out.println("5 - Sair");
             System.out.print("\nOpção: ");
             opcao = read.nextInt();
 
-            while(opcao < 1 || opcao > 3){
+            while(opcao < 1 || opcao > 5){
                 System.out.println("\nDigite novamente.");
                 System.out.print("\nOpção: ");
                 opcao = read.nextInt();
             }
+            
+            read.nextLine();
             
             if(opcao == 1){
                 System.out.println("\nSelecione o que deseja cadastrar:");
@@ -79,7 +83,7 @@ public class PrincipalArrayList{
                     animal.setDieta(read.nextLine());
                     vAnimal.add(animal);
                 } else if(opcao == 2){
-                    System.out.println("\nSelecione a classe do animal:");
+                    System.out.println("\nSelecione qual classe de animal quer cadastrar:");
                     System.out.println("\n1 - Mamífero");
                     System.out.println("2 - Réptil");
                     System.out.println("3 - Voltar ao MENU");
@@ -150,7 +154,7 @@ public class PrincipalArrayList{
                         vReptil.add(reptil);
                     }
                 } else if(opcao == 3){
-                    System.out.println("\nSelecione a ordem do animal:");
+                    System.out.println("\nSelecione qual ordem de animal quer cadastrar:");
                     System.out.println("\n1 - Ovino");
                     System.out.println("2 - Primata");
                     System.out.println("3 - Voltar ao MENU");
@@ -238,7 +242,7 @@ public class PrincipalArrayList{
                         vPrimata.add(primata);
                     }
                 } else if(opcao == 4) {
-                    System.out.println("\nSelecione o animal específico:");
+                    System.out.println("\nSelecione qual espécie de animal quer mostrar:");
                     System.out.println("\n1 - Cobra");
                     System.out.println("2 - Jacaré");
                     System.out.println("3 - Ovelha");
@@ -433,7 +437,7 @@ public class PrincipalArrayList{
                             System.out.println("Habitat do Animal: "+vAnimal.get(i).getHabitat());
                             System.out.println("Dieta do Animal: "+vAnimal.get(i).getDieta());
                         }
-                        System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                        System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                         read.nextLine();
                     } else if(opcao == 999){
                     } else {
@@ -446,7 +450,7 @@ public class PrincipalArrayList{
                         System.out.println("Cor do Animal: "+vAnimal.get(opcao).getCor());
                         System.out.println("Habitat do Animal: "+vAnimal.get(opcao).getHabitat());
                         System.out.println("Dieta do Animal: "+vAnimal.get(opcao).getDieta());
-                        System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                        System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                         read.nextLine();
                     }
                 } else if(opcao == 2){
@@ -477,6 +481,12 @@ public class PrincipalArrayList{
 
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
+                        
+                        while(opcao < 0 || opcao > vMamifero.lastIndexOf(mamifero) && opcao != 100 && opcao != 999){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
+                        }
 
                         read.nextLine();
 
@@ -491,8 +501,10 @@ public class PrincipalArrayList{
                                 System.out.println("Cor do Animal: "+vMamifero.get(i).getCor());
                                 System.out.println("Habitat do Animal: "+vMamifero.get(i).getHabitat());
                                 System.out.println("Dieta do Animal: "+vMamifero.get(i).getDieta());
+                                System.out.println("\nNúmero de Mamas do Mamífero: "+vMamifero.get(i).getNumeroMamas());
+                                System.out.println("Tipo de Pelo do Mamífero: "+vMamifero.get(i).getTipoDePelo());
                             }
-                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                             read.nextLine();
                         } else if(opcao == 999){
                         } else {
@@ -505,7 +517,9 @@ public class PrincipalArrayList{
                             System.out.println("Cor do Animal: "+vMamifero.get(opcao).getCor());
                             System.out.println("Habitat do Animal: "+vMamifero.get(opcao).getHabitat());
                             System.out.println("Dieta do Animal: "+vMamifero.get(opcao).getDieta());
-                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                            System.out.println("\nNúmero de Mamas do Mamífero: "+vMamifero.get(opcao).getNumeroMamas());
+                            System.out.println("Tipo de Pelo do Mamífero: "+vMamifero.get(opcao).getTipoDePelo());
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                             read.nextLine();
                         }
                     } else if(opcao == 2){
@@ -520,6 +534,12 @@ public class PrincipalArrayList{
 
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
+                        
+                        while(opcao < 0 || opcao > vReptil.lastIndexOf(reptil) && opcao != 100 && opcao != 999){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
+                        }
 
                         read.nextLine();
 
@@ -534,8 +554,9 @@ public class PrincipalArrayList{
                                 System.out.println("Cor do Animal: "+vReptil.get(i).getCor());
                                 System.out.println("Habitat do Animal: "+vReptil.get(i).getHabitat());
                                 System.out.println("Dieta do Animal: "+vReptil.get(i).getDieta());
+                                System.out.println("\nNúmero de Patas do Reptil: "+vReptil.get(i).getNumeroPatas());
                             }
-                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                             read.nextLine();
                         } else if(opcao == 999){
                         } else {
@@ -548,7 +569,8 @@ public class PrincipalArrayList{
                             System.out.println("Cor do Animal: "+vReptil.get(opcao).getCor());
                             System.out.println("Habitat do Animal: "+vReptil.get(opcao).getHabitat());
                             System.out.println("Dieta do Animal: "+vReptil.get(opcao).getDieta());
-                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                            System.out.println("\nNúmero de Patas do Reptil: "+vReptil.get(opcao).getNumeroPatas());
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                             read.nextLine();
                         }
                     }
@@ -580,7 +602,13 @@ public class PrincipalArrayList{
 
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
-
+                        
+                        while(opcao < 0 || opcao > vOvino.lastIndexOf(ovino) && opcao != 100 && opcao != 999){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
+                        }
+                        
                         read.nextLine();
 
                         if(opcao == 100){
@@ -594,8 +622,11 @@ public class PrincipalArrayList{
                                 System.out.println("Cor do Animal: "+vOvino.get(i).getCor());
                                 System.out.println("Habitat do Animal: "+vOvino.get(i).getHabitat());
                                 System.out.println("Dieta do Animal: "+vOvino.get(i).getDieta());
+                                System.out.println("\nNúmero de Mamas do Mamífero: "+vOvino.get(i).getNumeroMamas());
+                                System.out.println("Tipo de Pelo do Mamífero: "+vOvino.get(i).getTipoDePelo());
+                                System.out.println("\nO ovino tem chifre? "+vOvino.get(i).getChifre());
                             }
-                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                             read.nextLine();
                         } else if(opcao == 999){
                         } else {
@@ -608,7 +639,10 @@ public class PrincipalArrayList{
                             System.out.println("Cor do Animal: "+vOvino.get(opcao).getCor());
                             System.out.println("Habitat do Animal: "+vOvino.get(opcao).getHabitat());
                             System.out.println("Dieta do Animal: "+vOvino.get(opcao).getDieta());
-                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                            System.out.println("\nNúmero de Mamas do Mamífero: "+vOvino.get(opcao).getNumeroMamas());
+                            System.out.println("Tipo de Pelo do Mamífero: "+vOvino.get(opcao).getTipoDePelo());
+                            System.out.println("\nO ovino tem chifre? "+vOvino.get(opcao).getChifre());
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                             read.nextLine();
                         }
                     } else if(opcao == 2){
@@ -624,6 +658,12 @@ public class PrincipalArrayList{
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
 
+                        while(opcao < 0 || opcao > vPrimata.lastIndexOf(primata) && opcao != 100 && opcao != 999){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
+                        }
+                        
                         read.nextLine();
 
                         if(opcao == 100){
@@ -637,8 +677,11 @@ public class PrincipalArrayList{
                                 System.out.println("Cor do Animal: "+vPrimata.get(i).getCor());
                                 System.out.println("Habitat do Animal: "+vPrimata.get(i).getHabitat());
                                 System.out.println("Dieta do Animal: "+vPrimata.get(i).getDieta());
+                                System.out.println("\nNúmero de Mamas do Mamífero: "+vPrimata.get(i).getNumeroMamas());
+                                System.out.println("Tipo de Pelo do Mamífero: "+vPrimata.get(i).getTipoDePelo());
+                                System.out.println("\nNúmero de Dedos do Primata: "+vPrimata.get(i).getNumeroDedos());
                             }
-                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                             read.nextLine();
                         } else if(opcao == 999){
                         } else {
@@ -651,7 +694,10 @@ public class PrincipalArrayList{
                             System.out.println("Cor do Animal: "+vPrimata.get(opcao).getCor());
                             System.out.println("Habitat do Animal: "+vPrimata.get(opcao).getHabitat());
                             System.out.println("Dieta do Animal: "+vPrimata.get(opcao).getDieta());
-                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                            System.out.println("\nNúmero de Mamas do Mamífero: "+vPrimata.get(opcao).getNumeroMamas());
+                            System.out.println("Tipo de Pelo do Mamífero: "+vPrimata.get(opcao).getTipoDePelo());
+                            System.out.println("\nNúmero de Dedos do Primata: "+vPrimata.get(opcao).getNumeroDedos());
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                             read.nextLine();
                         }
                     }
@@ -684,6 +730,12 @@ public class PrincipalArrayList{
 
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
+                        
+                        while(opcao < 0 || opcao > vCobra.lastIndexOf(cobra) && opcao != 100 && opcao != 999){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
+                        }
 
                         read.nextLine();
 
@@ -698,8 +750,11 @@ public class PrincipalArrayList{
                                 System.out.println("Cor do Animal: "+vCobra.get(i).getCor());
                                 System.out.println("Habitat do Animal: "+vCobra.get(i).getHabitat());
                                 System.out.println("Dieta do Animal: "+vCobra.get(i).getDieta());
+                                System.out.println("\nNúmero de Patas do Reptil: "+vCobra.get(i).getNumeroPatas());
+                                System.out.println("\nA cobra é peçonhenta? "+vCobra.get(i).getPeconha());
+                                System.out.println("A cobra possui visão infravermelha? "+vCobra.get(i).getSensorDeCalor());
                             }
-                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                             read.nextLine();
                         } else if(opcao == 999){
                         } else {
@@ -712,7 +767,10 @@ public class PrincipalArrayList{
                             System.out.println("Cor do Animal: "+vCobra.get(opcao).getCor());
                             System.out.println("Habitat do Animal: "+vCobra.get(opcao).getHabitat());
                             System.out.println("Dieta do Animal: "+vCobra.get(opcao).getDieta());
-                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                            System.out.println("\nNúmero de Patas do Reptil: "+vCobra.get(opcao).getNumeroPatas());
+                            System.out.println("\nA cobra é peçonhenta? "+vCobra.get(opcao).getPeconha());
+                            System.out.println("A cobra possui visão infravermelha? "+vCobra.get(opcao).getSensorDeCalor());
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                             read.nextLine();
                         }
                     } else if(opcao == 2){
@@ -727,6 +785,12 @@ public class PrincipalArrayList{
 
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
+                        
+                        while(opcao < 0 || opcao > vJacare.lastIndexOf(jacare) && opcao != 100 && opcao != 999){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
+                        }
 
                         read.nextLine();
 
@@ -741,8 +805,10 @@ public class PrincipalArrayList{
                                 System.out.println("Cor do Animal: "+vJacare.get(i).getCor());
                                 System.out.println("Habitat do Animal: "+vJacare.get(i).getHabitat());
                                 System.out.println("Dieta do Animal: "+vJacare.get(i).getDieta());
+                                System.out.println("\nNúmero de Patas do Reptil: "+vJacare.get(i).getNumeroPatas());
+                                System.out.println("\nNúmero de Garras do Jacaré: "+vJacare.get(i).getNumeroGarras());
                             }
-                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                             read.nextLine();
                         } else if(opcao == 999){
                         } else {
@@ -755,7 +821,9 @@ public class PrincipalArrayList{
                             System.out.println("Cor do Animal: "+vJacare.get(opcao).getCor());
                             System.out.println("Habitat do Animal: "+vJacare.get(opcao).getHabitat());
                             System.out.println("Dieta do Animal: "+vJacare.get(opcao).getDieta());
-                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                            System.out.println("\nNúmero de Patas do Reptil: "+vJacare.get(opcao).getNumeroPatas());
+                            System.out.println("\nNúmero de Garras do Jacaré: "+vJacare.get(opcao).getNumeroGarras());
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                             read.nextLine();
                         }
                     } else if(opcao == 3){
@@ -770,6 +838,12 @@ public class PrincipalArrayList{
 
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
+                        
+                        while(opcao < 0 || opcao > vOvelha.lastIndexOf(ovelha) && opcao != 100 && opcao != 999){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
+                        }
 
                         read.nextLine();
 
@@ -784,8 +858,12 @@ public class PrincipalArrayList{
                                 System.out.println("Cor do Animal: "+vOvelha.get(i).getCor());
                                 System.out.println("Habitat do Animal: "+vOvelha.get(i).getHabitat());
                                 System.out.println("Dieta do Animal: "+vOvelha.get(i).getDieta());
+                                System.out.println("\nNúmero de Mamas do Mamífero: "+vOvelha.get(i).getNumeroMamas());
+                                System.out.println("Tipo de Pelo do Mamífero: "+vOvelha.get(i).getTipoDePelo());
+                                System.out.println("\nO ovino tem chifre? "+vOvelha.get(i).getChifre());
+                                System.out.println("\nA ovelha está com lã? "+vOvelha.get(i).getLa());
                             }
-                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                             read.nextLine();
                         } else if(opcao == 999){
                         } else {
@@ -798,11 +876,19 @@ public class PrincipalArrayList{
                             System.out.println("Cor do Animal: "+vOvelha.get(opcao).getCor());
                             System.out.println("Habitat do Animal: "+vOvelha.get(opcao).getHabitat());
                             System.out.println("Dieta do Animal: "+vOvelha.get(opcao).getDieta());
-                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                            System.out.println("\nNúmero de Mamas do Mamífero: "+vOvelha.get(opcao).getNumeroMamas());
+                            System.out.println("Tipo de Pelo do Mamífero: "+vOvelha.get(opcao).getTipoDePelo());
+                            System.out.println("\nO ovino tem chifre? "+vOvelha.get(opcao).getChifre());
+                            System.out.println("\nA ovelha está com lã? "+vOvelha.get(opcao).getLa());
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                             read.nextLine();
                         }
                     }
                 }
+            } else if(opcao == 3){
+                
+            } else if(opcao == 4){
+                
             } else {
                 System.out.println("\nVocê saiu.");
                 rodando = false;
