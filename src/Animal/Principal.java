@@ -551,27 +551,20 @@ public class Principal{
                 
                 
                 if(opcao == 1){
-                    System.out.println("1 - Andar");
-                    System.out.println("2 - Comer");
-                    System.out.println("3 - Beber");
-                    System.out.println("4 - Voltar ao MENU");
+                 
+                    System.out.println("1 - Comer");
+                    System.out.println("2 - Beber");
+                    System.out.println("3 - Voltar ao MENU");
                     System.out.print("\nOpção: ");
                     opcao = read.nextInt();
                     
                      if (opcao == 1){
-                         
+                         animal.Comer();
                         }
                         else if (opcao == 2){
-                            animal.Comer();
+                            animal.beber();
                         }
-                        
-                        else if (opcao == 3){
-
-                        }
-                            
-                        else if (opcao == 4){
-                            
-                        }
+                        else{}   
                     
                 } else if(opcao == 2){
                     System.out.println("\nSelecione a classe que deseja mostrar:");
@@ -591,28 +584,31 @@ public class Principal{
                     if(opcao == 1){
                         // AÇÕES MAMIFEROS 
 
-                        System.out.println("1 - Andar");
-                        System.out.println("2 - Comer");
-                        System.out.println("3 - Beber");
-                        System.out.println("4 - Amamentar cria");
+                 
+                        System.out.println("1 - Comer");
+                        System.out.println("2 - Beber");
+                        
+                        System.out.println("3 - Quem sao?");
+                        System.out.println("4 - Exemplos");
                         System.out.println("5 - Voltar ao MENU");
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
                     
                         if (opcao == 1){
-
+                         mamifero.Comer();
                         }
                         else if (opcao == 2){
-                             animal.Comer(); 
+                            mamifero.beber();
                         }
                         
                         else if (opcao == 3){
-
+                            mamifero.quem();
                         }
                             
                         else if (opcao == 4){
-                            
+                            mamifero.ex();
                         }
+                        else{}
                         
                     } else if(opcao == 2){
                       // AÇÕES REPTEIS
@@ -629,18 +625,18 @@ public class Principal{
                       opcao = read.nextInt();
 
                         if (opcao == 1){
-
+                            reptil.Comer();
                         }
                         else if (opcao == 2){
-                            animal.Comer();
+                          reptil.beber();
                         }
                         
                         else if (opcao == 3){
-                            animal.beber();
+                            reptil.trocapele();
                         }
                             
                         else if (opcao == 4){
-                            
+                            reptil.ovo();
                         }
                     }
                 } else if(opcao == 3){
@@ -667,25 +663,25 @@ public class Principal{
                         System.out.println("3 - Beber");
 
                         System.out.println("4 - Chifrada/Cabeçada");
-                        System.out.println("5 - Trocas de Pele");
                         System.out.println("6 - Voltar ao MENU");
 
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
                     
                         if (opcao == 1){
-
+                            ovino.Comer();
                         }
                         else if (opcao == 2){
-                            animal.Comer();
+                            ovino.beber();
                         }
                         
                         else if (opcao == 3){
-                            animal.beber();
+                          ovino.La();
+                                  
                         }
                             
                         else if (opcao == 4){
-                            
+                            ovino.berrar();
                         }
                     } else if(opcao == 2){
                         // AÇÕES PRIMATA
@@ -702,18 +698,17 @@ public class Principal{
                         opcao = read.nextInt();
                     
                         if (opcao == 1){
-                            animal.Comer();
+                            primata.Comer();
                         }
                         else if (opcao == 2){
-
+                            primata.beber();
                         }
                         
                         else if (opcao == 3){
-                            animal.beber();
-                        }
+                            primata.Banana();                      }
                             
                         else if (opcao == 4){
-                            
+                            primata.sorrir();
                         }
                     }
                 } else if(opcao == 4){
@@ -735,39 +730,43 @@ public class Principal{
                     if(opcao == 1){
                         // AÇÕES  COBRA 
 
-                        System.out.println("1 - Andar");
-                        System.out.println("2 - Comer");
-                        System.out.println("3 - Beber");
-
-                        System.out.println("4 - Depositar ovos");
-                        System.out.println("5 - Trocar de pele");
-                        System.out.println("6 - Sibilar da Serpente");
-                        System.out.println("7 - Dar bote");
-                        System.out.println("8 - Injetar veneno");
-                        System.out.println("9 - Voltar ao MENU");
-
+                        System.out.println("1 - Comer");
+                        System.out.println("2 - Beber");
+                        
+                        System.out.println("3 - Trocar de Pele");
+                        System.out.println("4 - Botar Ovo");
+                      
+                        System.out.println("3 - Dar bote");
+                        System.out.println("4 - Injetar veneno");
+                        
+                        System.out.println("5 - Voltar ao MENU");
+                        
+                        //Ideias para ações extras
+                      //  System.out.println("4 - Depositar ovos");
+                      //  System.out.println("5 - Trocar de pele");
+                      //  System.out.println("6 - Sibilar da Serpente");
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
 
                         if (opcao == 1){
-
+                            cobra.Comer();
                         }
                         else if (opcao == 2){
-                            animal.Comer();
+                            cobra.beber();
                         }
 
                         else if (opcao == 3){
-                            animal.beber();
+                              cobra.trocapele();
                         }
 
                         else if (opcao == 4){
-
+                           cobra.ovo();
                         }
                         else if (opcao == 5){
-
+                        cobra.bote();
                         }
                         else if (opcao == 6){
-
+                            
                         }
                         else if (opcao == 7){
                         cobra.bote();
@@ -779,39 +778,40 @@ public class Principal{
                     } else if(opcao == 2){
                         // AÇÕES  JACARÉ 
 
-                        System.out.println("1 - Andar");
-                        System.out.println("2 - Comer");
-                        System.out.println("3 - Beber");
+                  
+                        System.out.println("1 - Comer");
+                        System.out.println("2 - Beber");
+                        
+                        System.out.println("3 - Trocar de Pele");
+                        System.out.println("4 - Botar Ovo");
 
-                        System.out.println("4 - Depositar ovos");
-                        System.out.println("5 - Trocar de pele");
-
-                        System.out.println("6 - Abocanhar");
-                        System.out.println("7 - Nadar");
-                        System.out.println("9 - Voltar ao MENU");
+                        System.out.println("5 - Abocanhar");
+                        System.out.println("6 - Nadar");
+                      //  System.out.println("7 - Nadar");
+                        System.out.println("7 - Voltar ao MENU");
                         
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
 
                         if (opcao == 1){
-
+                            jacare.Comer();
                         }
                         else if (opcao == 2){
-                            animal.Comer();
+                            jacare.beber();
                         }
 
                         else if (opcao == 3){
-                            animal.beber();
+                           jacare.trocapele();
                         }
 
                         else if (opcao == 4){
-
+                          jacare.ovo();
                         }
                         else if (opcao == 5){
-
+                        jacare.abocanhar();
                         }
                         else if (opcao == 6){
-                            jacare.abocanhar();
+                            jacare.nadar();
                         }
                         else if (opcao == 7){
 
@@ -839,24 +839,24 @@ public class Principal{
                     opcao = read.nextInt();
                     
                         if (opcao == 1){
-
+                            animal.Comer();
                         }
                         else if (opcao == 2){
-                            animal.Comer();
+                          animal.beber();
                         }
                         
                         else if (opcao == 3){
-                            animal.beber();
+                           ovelha.La();
                         }
                             
                         else if (opcao == 4){
-                            
+                            ovelha.berrar();
                         }
                         else if (opcao == 5){
-                            
+                            ovelha.chifrada();
                         }
                         else if (opcao == 6){
-                            
+                            ovelha.Pastar();
                         }
                         else if (opcao == 7){
                             

@@ -44,12 +44,26 @@ public void abocanhar(){
             else{
             System.out.println("\nVocê Errou seu ataque, mais sorte na proxima vez! ;-;\nO resultado do seu dado foi:"+dado);
             System.out.println("+---------------------------------------------------------+");
-            }
-        
-        
+            }    
         }
 }
+    public void nadar(){
+     System.out.println("+-------------------|Histora Jacaré|---------------------+");
+System.out.println("                          _.---._     .---.");
+System.out.println("            __...---' .---. `---'-.   `.");
+System.out.println("  ~ -~ -.-''__.--' _.'( | )`.  `.  `._ :");
+System.out.println(" -.~~ .'__-'_ .--'' ._`---'_.-.  `.   `-`.");
+System.out.println("  ~ ~_~-~-~_ ~ -._ -._``---. -.    `-._   `.");
+System.out.println("    ~- ~ ~ -_ -~ ~ -.._ _ _ _ ..-_ `.  `-._``--.._");
+System.out.println("     ~~-~ ~-_ _~ ~-~ ~ -~ _~~_-~ -._  `-.  -. `-._``--.._.--''. ~ -~_");
+System.out.println("         ~~ -~_-~ _~- _~~ _~-_~ ~-_~~ ~-.___    -._  `-.__   `. `. ~ -_~");
+System.out.println("       jgs   ~~ _~- ~~- -_~  ~- ~ - _~~- _~~ ~---...__ _    ._ .` `. ~-_~");
+System.out.println("                ~ ~- _~~- _-_~ ~-_ ~-~ ~_-~ _~- ~_~-_~  ~--.....--~ -~_ ~");
+System.out.println("                     ~ ~ - ~  ~ ~~ - ~~-  ~~- ~-  ~ -~ ~ ~ -~~-  ~- ~-~");
+System.out.println("+---------------------------------------------------------+");
     
+    
+    }
     public int getNumeroGarras() {
         return numeroGarras;
     }
