@@ -1,29 +1,28 @@
 package Animal;
+import java.util.*;
 public class Mamifero extends Animal{
     private int numeroMamas;
     private String tipoDePelo;
-
     
-    public void quem(){
-        System.out.println("+-------------------|Ciencia Mamiferos|---------------------+");
-        System.out.println("grande classe de animais vertebrados, endotermos, vivíparos (exceto os monotremados,");
-         System.out.println("que são ovíparos), caracterizados pela presença de glândulas mamárias, corpo geralmente coberto");
-       System.out.println("por pelos, pele com numerosas glândulas, orelha externa presente e orelha média com três ossículos");
-       System.out.println("auditivos, coração com quatro câmaras, pulmões grandes e elásticos, cavidades torácica e abdominal");
-       System.out.println(" separadas por um diafragma e fecundação interna.");
-       System.out.println("+-------------------|Ciencia Mamiferos|---------------------+");
+    public void Quem(){
+       System.out.println("\n+-------------------|CIÊNCIA DOS MAMÍFEROS|---------------------+");
+       System.out.println("Grande classe de animais vertebrados, endotermos, vivíparos (exceto os monotremados, que são ovíparos),\n"
+       + "caracterizados pela presença de glândulas mamárias, corpo geralmente coberto por pelos, pele com numerosas glândulas,\n"
+       + "orelha externa presente e orelha média com três ossículos auditivos, coração com quatro câmaras, pulmões grandes e elásticos,\n"
+       + "cavidades torácica e abdominal separadas por um diafragma e fecundação interna.");
+       System.out.println("+-------------------|CIÊNCIA DOS MAMÍFEROS|---------------------+");
     }
-    public void ex(){
-        System.out.println("Anta.\n" +
-                            "Ariranha.\n" +
-                            "Baleia-azul.\n" +
-                            "Bicho-preguiça.\n" +
-                            "Boi.\n" +
-                            "Búfalo.\n" +
-                            "Cabra.\n" +
-                            "Cachorro.");
     
-    
+    public void Exemplo(){
+        System.out.println("\nExemplos:"
+        + "\nAnta\n"
+        + "Ariranha\n"
+        + "Baleia-Azul\n"
+        + "Bicho-Preguiça\n"
+        + "Boi\n"
+        + "Búfalo\n"
+        + "Cabra\n"
+        + "Cachorro");
     }
     
     public int getNumeroMamas() {

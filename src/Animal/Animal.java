@@ -11,154 +11,178 @@ public class Animal {
     protected String dieta; //ex: Carnívoro, Herbívoro e Onívoro
 
     Animal(){}
-
     
     public void Comer(){
-    Scanner prosseguir = new Scanner(System.in);   
-    String ler ;
-    System.out.println("+-------------------|Comendo------------------+");
-    System.out.println("loading  0%");                       
-    System.out.println("       :~!!!!~:.                                ");                        
-    System.out.println("      .~?Y5YYYY5YJ7~:                           ");                       
-    System.out.println("      .^^!7JYYYYYY55J7~7P7!777!^:               ");               
-    System.out.println("           ..:75GGPP555P#?!!77?7!!~~:           ");           
-    System.out.println("            :YGBGYJJJYY5Y?!~~~~!7?YYYJ~         ");        
-    System.out.println("           ~B#BBGJ!~~~!~~~~~!!7?J5GGGGGJ.       ");      
-    System.out.println("          :B#BBBBBGPPPP555PGGGBBBB###BBBJ.      ");     
-    System.out.println("          J#BBBBBBBBBBBBBBB###B#B####BB#5^      ");    
-    System.out.println("          5#BBBBB####################BP5Y~      ");    
-    System.out.println("          Y###B#BB####BB############BP5J?:      ");   
-    System.out.println("          ^G################BB##B###BGYJ~       ");  
-    System.out.println("           ~5B#############BBB###BB#BP?~        ");   
-    System.out.println("            :JPB##########B#BBB#####BJ^         ");     
-    System.out.println("             .!YGBB################GJ^          ");     
-    System.out.println("               :?G###&############P?^           ");   
-    System.out.println("             ...:!5#&&#&&&&&&&&&#G7^:....       ");      
-    System.out.println("              ...:^~~!!!!7777!!~^::...          ");     
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.println("+-------------------|COMENDO|------------------+");
+        System.out.println("Loading  0%");                       
+        System.out.println("       :~!!!!~:.                                ");                        
+        System.out.println("      .~?Y5YYYY5YJ7~:                           ");                       
+        System.out.println("      .^^!7JYYYYYY55J7~7P7!777!^:               ");               
+        System.out.println("           ..:75GGPP555P#?!!77?7!!~~:           ");           
+        System.out.println("            :YGBGYJJJYY5Y?!~~~~!7?YYYJ~         ");        
+        System.out.println("           ~B#BBGJ!~~~!~~~~~!!7?J5GGGGGJ.       ");      
+        System.out.println("          :B#BBBBBGPPPP555PGGGBBBB###BBBJ.      ");     
+        System.out.println("          J#BBBBBBBBBBBBBBB###B#B####BB#5^      ");    
+        System.out.println("          5#BBBBB####################BP5Y~      ");    
+        System.out.println("          Y###B#BB####BB############BP5J?:      ");   
+        System.out.println("          ^G################BB##B###BGYJ~       ");  
+        System.out.println("           ~5B#############BBB###BB#BP?~        ");   
+        System.out.println("            :JPB##########B#BBB#####BJ^         ");     
+        System.out.println("             .!YGBB################GJ^          ");     
+        System.out.println("               :?G###&############P?^           ");   
+        System.out.println("             ...:!5#&&#&&&&&&&&&#G7^:....       ");      
+        System.out.println("              ...:^~~!!!!7777!!~^::...          ");     
 
-    System.out.println("Pressione ENTER para continuar:"); 
-    ler = prosseguir.nextLine();
+        System.out.print("\nAperte ENTER ou digite qualquer coisa para continuar ");
+        ler.nextLine();
+        
+        System.out.println("Loading 100%");
+        System.out.println("                       :7^                      ");   
+        System.out.println("                        :5~                     ");
+        System.out.println("                :!?JYYJ?~~Y^7?JYYJ7~.           ");
+        System.out.println("              ~YGGGGGGGGGGGGGGGGGGGGP?:         ");   
+        System.out.println("             7GGGP5YJJY5PGGGGGG5?!~^^^:         ");   
+        System.out.println("             .:!^:::::::^~?PGY~:::.             ");   
+        System.out.println("                   ..::::::~7:::.               ");   
+        System.out.println("                      .::::^:::.                ");   
+        System.out.println("                       .:7^^7^.                 ");   
+        System.out.println("                        :7:^7:                  ");   
+        System.out.println("                       .:::^^:                  ");   
+        System.out.println("                      .:::^~~^.                 ");   
+        System.out.println("                     .::~^^^^~^:                ");   
+        System.out.println("                   .::~JGY?!~~!7?!.             ");   
+        System.out.println("                 .7J5PGGGGGGGGGGG?.             ");   
+        System.out.println("                   :!77!~::!77!~.               ");
+        System.out.println("+-------------------|COMENDO|------------------+");
 
-        if(ler.equals("")){
-            System.out.println("loading 100%");
-            System.out.println("                       :7^                      ");   
-            System.out.println("                        :5~                     ");
-            System.out.println("                :!?JYYJ?~~Y^7?JYYJ7~.           ");
-            System.out.println("              ~YGGGGGGGGGGGGGGGGGGGGP?:         ");   
-            System.out.println("             7GGGP5YJJY5PGGGGGG5?!~^^^:         ");   
-            System.out.println("             .:!^:::::::^~?PGY~:::.             ");   
-            System.out.println("                   ..::::::~7:::.               ");   
-            System.out.println("                      .::::^:::.                ");   
-            System.out.println("                       .:7^^7^.                 ");   
-            System.out.println("                        :7:^7:                  ");   
-            System.out.println("                       .:::^^:                  ");   
-            System.out.println("                      .:::^~~^.                 ");   
-            System.out.println("                     .::~^^^^~^:                ");   
-            System.out.println("                   .::~JGY?!~~!7?!.             ");   
-            System.out.println("                 .7J5PGGGGGGGGGGG?.             ");   
-            System.out.println("                   :!77!~::!77!~.               ");
-
-            System.out.println("Parabens voce conseguiu comer");
-
-        }else{}
+        System.out.println("\nParabéns você conseguiu comer!");
+        System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+        ler.nextLine();
     }
     
-    public void beber(){
-    Scanner prosseguir = new Scanner(System.in);   
-    Scanner escolha = new Scanner(System.in);   
-    String ler ;
-    int resposta;
-    System.out.println("+--------------------------------|Escolha seu caminho|---------------------------------------+");
-    System.out.println("FAça suas escolhas e lide com suas consequencias. Escolha o ambiente: ");
-    
+    public void Beber(){
+        Scanner ler = new Scanner(System.in);
+        int opcao;
+        
+        System.out.println("+--------------------------------|ESCOLHA SEU CAMINHO|---------------------------------------+");
+        System.out.println("Faça suas escolhas e lide com suas consequências.\n");
+        System.out.println("Escolha o ambiente:\n");
         System.out.println("1 - Floresta");
         System.out.println("2 - Deserto");
-        System.out.println("3 - Oceano/Lago");
+        System.out.println("3 - Oceano");
         System.out.print("\nOpção: ");
-        resposta = escolha.nextInt();
+        opcao = ler.nextInt();
         
-            if (resposta == 1) {
-                System.out.println("                                      .-.                   ");
-                System.out.println("                                       ) )                  ");
-                System.out.println("                                      '-'                   ");
-                System.out.println("                                                            ");
-                System.out.println("       ^  ^  ^   ^     ____I__      ^  ^   ^  ^  ^   ^  ^   ");
-                System.out.println("      /|)/|)/|) /|)   / |-_-- |    /|)/|) /|)/|)/|) /|)/|)  ");
-                System.out.println("      /|)/|)/|) /|)  /  |_-__ |    /|)/|) /|)/|)/|) /|)/|)  ");
-                System.out.println("______/|)/|)/|)_/|)__|[]| []  |____/|)/|)_/|)/|)/|)_/|)/|)_ ");
-                System.out.println("Escolha onde vc irá beber água:");
-                System.out.println("1 - Riacho");
-                System.out.println("2 - Lago");
-                System.out.println("3 - Balde proximo a Cabana");
-                System.out.print("\nOpção: ");
-                resposta = escolha.nextInt();
-                
-                    if (resposta == 1) {
-                        System.out.println("Enquanto voce apeoxima do riacho vc encontra diversos tipo de plantas e pequenos animais, que se reunem proximos ao riacho.\nVoce consegue se deliciar com as águas limpidas do riacho");
-                }
-                    else if (resposta == 2) {
-                        System.out.println("Se aproximando do lago voce se depara com um diversos vultos, nadando entre as águas, ainda assim voce consegue beber agua e sair, antes que qualquer ser te atacasse. ");
-                }
-                    else if (resposta == 3) {
-                        System.out.println("Se aproximando do balde vc ouve estrodosas vozes vindo da Cabana,assim repentinamente se assustando e fazendo barulho.\nDa cabana sai um homem parrudo e com uma espingarda em suas mãos.");
-                        System.out.println("Ele te encontra e atira: BAMMM!!");
-                        System.out.println("\n Voce MORREU, Boa sorte da proxima vez");
-                }
+        while(opcao < 1 || opcao > 3){
+            System.out.println("\nDigite novamente.");
+            System.out.print("\nOpção: ");
+            opcao = ler.nextInt();
+        }
+        
+        if(opcao == 1){
+            System.out.println("                                      .-.                   ");
+            System.out.println("                                       ) )                  ");
+            System.out.println("                                      '-'                   ");
+            System.out.println("                                                            ");
+            System.out.println("       ^  ^  ^   ^     ____I__      ^  ^   ^  ^  ^   ^  ^   ");
+            System.out.println("      /|)/|)/|) /|)   / |-_-- |    /|)/|) /|)/|)/|) /|)/|)  ");
+            System.out.println("      /|)/|)/|) /|)  /  |_-__ |    /|)/|) /|)/|)/|) /|)/|)  ");
+            System.out.println("______/|)/|)/|)_/|)__|[]| []  |____/|)/|)_/|)/|)/|)_/|)/|)_ ");
+            System.out.println("\nEscolha onde você irá beber água:\n");
+            System.out.println("1 - Riacho");
+            System.out.println("2 - Lago");
+            System.out.println("3 - Balde próximo a Cabana");
+            System.out.print("\nOpção: ");
+            opcao = ler.nextInt();
             
-            }
-            else if (resposta == 2) {
-                System.out.println("            ,,                              .-.            ");
-                System.out.println("          || |                               ) )            ");
-                System.out.println("          || |   ,                          '-'             ");
-                System.out.println("          || |  | |                                         ");
-                System.out.println("          || '--' |                                         ");
-                System.out.println("    ,,    || .----'                                         ");
-                System.out.println("   || |   || |                                              ");
-                System.out.println("   |  '---'| |                                              ");
-                System.out.println("   '------.| |                                  _____       ");
-                System.out.println("   ((_))  || |      (  _                       [ [|] ]      ");
-                System.out.println("   (o o)  || |      ))(')                      | | | |       ");
-                System.out.println("____[V]___||_|_____((__^_))____________________[_[|]_]__ldb ");           
-                System.out.println("Escolha onde vc irá beber água:");
-                System.out.println("1 - Cactus");
-                System.out.println("2 - Oasis");
-                System.out.println("3 - Barril");
+            while(opcao < 1 || opcao > 3){
+                System.out.println("\nDigite novamente.");
                 System.out.print("\nOpção: ");
-                resposta = escolha.nextInt();
-
-                if (resposta == 1) {
-                    System.out.println("\nVoce sorrateiramente se esgueira até o cactus e consegue quebra-lo, mesmo se espetando em alguns espinhos.\n Ainda assim voce consegue beber a agua presente no seu interior  ");
-                }
-                else if (resposta == 2) {
-                    System.out.println("Se aproximando do oasis voce percebe uma inconsistenciana paisagem como se aquilo mudasse a cada Segundo. O Oasis é uma miragem. Voce ainda sente muita SEDE. ");
-                }
-                else if (resposta == 3) {
-                    System.out.println("Se aproximando do barril vc ouve um barulho parecido com o de um chocalho. Do Barril surje uma imensa e voraz Cascavel, que te morde.\nLentamente, voce vai se desprendendo deste mundo.");
-                    System.out.println("\nVoce MORREU, boa sorte da proxima vez");
-                }
+                opcao = ler.nextInt();
             }
-            else if (resposta == 3) {
-                System.out.println("                   .               _         /             ");
-                System.out.println("                          .    ,../...     /|              ");
-                System.out.println("                            .  |      `|   / |             ");
-                System.out.println("     |              o         < '  )     =<  |             ");
-                System.out.println("     |'                        | /      |   ''  __         ");
-                System.out.println("   >=)'>                        `'(''''' '                 ");
-                System.out.println("     |/               o              /,                    ");
-                System.out.println("     /                             <')=<            o      ");
-                System.out.println("                                    |                      ");
-                System.out.println("           o                                               ");
-                System.out.println("    (                                     .   __           ");
-                System.out.println("     )                                       <'_><      (  ");
-                System.out.println("    (          (           º     ,/..          `         ) ");
-                System.out.println("     )     (    )             <')   `=<                (   ");
-                System.out.println("    (       )  (      o        ``|```          o         ) ");
-                System.out.println("_____)_____(____)______________________________________(___");
-                System.out.println("Voce esta num ambiente aquatico, a agua é vasta ao seu redor.\n Voce ou consegue absorve-la pelas suas guelras ou irá bebe-la de outra forma. Não se preocupe voce n passará sede");
+                
+            if(opcao == 1){
+                System.out.println("\nEnquanto você se aproxima do riacho, você encontra diversos tipos de plantas e pequenos animais, que se reúnem próximos ao riacho.\n"
+                + "Você consegue se deliciar com as águas limpidas do riacho.");
+            } else if(opcao == 2){
+                System.out.println("\nSe aproximando do lago, você se depara com diversos vultos nadando entre as águas.\n"
+                + "Ainda assim, você consegue beber égua e sair, antes que qualquer ser te atacasse.");
+            } else {
+                System.out.println("\nSe aproximando do balde, você ouve estrondosas vozes vindo da Cabana. Assim, você se assusta e faz barulho.\n"
+                + "Da cabana sai um homem parrudo e com uma espingarda em suas mãos.\n"
+                + "Ele te encontra e atira: BAMMM!!\n\n"
+                + "Você MORREU. Boa sorte da próxima vez!");
             }
-           System.out.print("Pressione ENTER para continuar:"); 
-           ler = prosseguir.nextLine(); 
-           System.out.println(" +--------------------------------------------------------------------------------------------+ ");
+        } else if(opcao == 2){
+            System.out.println("            ,,                              .-.            ");
+            System.out.println("          || |                               ) )            ");
+            System.out.println("          || |   ,                          '-'             ");
+            System.out.println("          || |  | |                                         ");
+            System.out.println("          || '--' |                                         ");
+            System.out.println("    ,,    || .----'                                         ");
+            System.out.println("   || |   || |                                              ");
+            System.out.println("   |  '---'| |                                              ");
+            System.out.println("   '------.| |                                  _____       ");
+            System.out.println("   ((_))  || |      (  _                       [ [|] ]      ");
+            System.out.println("   (o o)  || |      ))(')                      | | | |       ");
+            System.out.println("____[V]___||_|_____((__^_))____________________[_[|]_]__ldb ");           
+            System.out.println("\nEscolha onde você irá beber água:\n");
+            System.out.println("1 - Cacto");
+            System.out.println("2 - Oásis");
+            System.out.println("3 - Barril");
+            System.out.print("\nOpção: ");
+            opcao = ler.nextInt();
+            
+            while(opcao < 1 || opcao > 3){
+                System.out.println("\nDigite novamente.");
+                System.out.print("\nOpção: ");
+                opcao = ler.nextInt();
+            }
+            
+            if(opcao == 1){
+                System.out.println("\nVocê sorrateiramente se esgueira até o cacto e consegue quebrá-lo, mesmo se espetando em alguns espinhos.\n"
+                + "Ainda assim, você consegue beber a água presente no seu interior.");
+            } else if(opcao == 2){
+                System.out.println("\nSe aproximando do oásis, você percebe uma inconsistência na paisagem como se aquilo mudasse a cada segundo.\n"
+                + "O oasis é uma miragem.\n"
+                + "Você ainda sente muita sede.");
+            } else {
+                System.out.println("\nSe aproximando do barril, você ouve um barulho parecido com o de um chocalho.\n"
+                + "Do Barril surge uma imensa e voraz cascavel, que te morde.\n"
+                + "Lentamente, você vai se desprendendo deste mundo.\n\n"
+                + "Você MORREU. Boa sorte da próxima vez!");
+            }
+        } else {
+            System.out.println("                   .               _         /             ");
+            System.out.println("                          .    ,../...     /|              ");
+            System.out.println("                            .  |      `|   / |             ");
+            System.out.println("     |              o         < '  )     =<  |             ");
+            System.out.println("     |'                        | /      |   ''  __         ");
+            System.out.println("   >=)'>                        `'(''''' '                 ");
+            System.out.println("     |/               o              /,                    ");
+            System.out.println("     /                             <')=<            o      ");
+            System.out.println("                                    |                      ");
+            System.out.println("           o                                               ");
+            System.out.println("    (                                     .   __           ");
+            System.out.println("     )                                       <'_><      (  ");
+            System.out.println("    (          (           º     ,/..          `         ) ");
+            System.out.println("     )     (    )             <')   `=<                (   ");
+            System.out.println("    (       )  (      o        ``|```          o         ) ");
+            System.out.println("_____)_____(____)______________________________________(___");
+            System.out.println("\nVocê está num ambiente aquático, a água é vasta ao seu redor.\n"
+            + "Você ou consegue absorver-la pelas suas guelras ou irá bebê-la de outra forma.\n"
+            + "Não se preocupe, você não passará sede.\n"
+            + "Se não for um animal aquático, não sei porquê está fazendo tão abaixo da superfície.");
+        }
+        System.out.println("+--------------------------------|ESCOLHA SEU CAMINHO|---------------------------------------+");
+        System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+        ler.nextLine(); ler.nextLine();
+    }
+    
+    public void Andar(){
+        System.out.println("Andando...");
     }
     
     public String getNome() {
@@ -255,10 +279,5 @@ public class Animal {
         } else {
             this.dieta = dieta;     
         }
-    }
-    
-    public void andar(){
-        System.out.println("Andando...");
-    }
-    
+    }  
 }

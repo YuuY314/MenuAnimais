@@ -16,7 +16,7 @@ public class Principal{
         Ovelha ovelha = new Ovelha();
         
         while(rodando){
-            System.out.println("MENU");
+            System.out.println("\n| MENU |");
             System.out.println("\n1 - Cadastrar");
             System.out.println("2 - Mostrar");
             System.out.println("3 - Ações");
@@ -34,6 +34,7 @@ public class Principal{
             read.nextLine();
             
             if(opcao == 1){
+                System.out.println("\n| CADASTRO |");
                 System.out.println("\nSelecione o que deseja cadastrar:");
                 System.out.println("\n1 - Animal Genérico");//ex: Animal
                 System.out.println("2 - Classe de Animal");//ex: Mamífero e Réptil
@@ -362,6 +363,7 @@ public class Principal{
                     }
                 }
             } else if(opcao == 2){
+                System.out.println("\n| MOSTRAR |");
                 System.out.println("\nSelecione o que deseja mostrar:");
                 System.out.println("\n1 - Animal Genérico");
                 System.out.println("2 - Classe de Animal");
@@ -380,6 +382,7 @@ public class Principal{
                 read.nextLine();
                 
                 if(opcao == 1){
+                    System.out.println("\n| ANIMAL |");
                     System.out.println("\nNome do Animal: "+animal.getNome());
                     System.out.println("Classe do Animal: "+animal.getClasse());
                     System.out.println("Ordem do Animal: "+animal.getOrdem());
@@ -388,7 +391,7 @@ public class Principal{
                     System.out.println("Cor do Animal: "+animal.getCor());
                     System.out.println("Habitat do Animal: "+animal.getHabitat());
                     System.out.println("Dieta do Animal: "+animal.getDieta());
-                    System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU");
+                    System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                     read.nextLine();
                 } else if(opcao == 2){
                     System.out.println("\nSelecione a classe que deseja mostrar:");
@@ -407,6 +410,7 @@ public class Principal{
                     read.nextLine();
                     
                     if(opcao == 1){
+                        System.out.println("\n| MAMÍFERO |");
                         System.out.println("\nNome do Animal: "+mamifero.getNome());
                         System.out.println("Classe do Animal: "+mamifero.getClasse());
                         System.out.println("Ordem do Animal: "+mamifero.getOrdem());
@@ -417,8 +421,10 @@ public class Principal{
                         System.out.println("Dieta do Animal: "+mamifero.getDieta());
                         System.out.println("\nNúmero de Mamas do Mamífero: "+mamifero.getNumeroMamas());
                         System.out.println("Tipo de Pelo do Mamífero: "+mamifero.getTipoDePelo());
+                        System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                         read.nextLine();
                     } else if(opcao == 2){
+                        System.out.println("\n| REPTIL |");
                         System.out.println("\nNome do Animal: "+reptil.getNome());
                         System.out.println("Classe do Animal: "+reptil.getClasse());
                         System.out.println("Ordem do Animal: "+reptil.getOrdem());
@@ -428,6 +434,7 @@ public class Principal{
                         System.out.println("Habitat do Animal: "+reptil.getHabitat());
                         System.out.println("Dieta do Animal: "+reptil.getDieta());
                         System.out.println("\nNúmero de Patas do Reptil: "+reptil.getNumeroPatas());
+                        System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                         read.nextLine();
                     }
                 } else if(opcao == 3){
@@ -447,6 +454,7 @@ public class Principal{
                     read.nextLine();
                     
                     if(opcao == 1){
+                        System.out.println("\n| OVINO|");
                         System.out.println("\nNome do Animal: "+ovino.getNome());
                         System.out.println("Classe do Animal: "+ovino.getClasse());
                         System.out.println("Ordem do Animal: "+ovino.getOrdem());
@@ -458,8 +466,10 @@ public class Principal{
                         System.out.println("\nNúmero de Mamas do Mamífero: "+ovino.getNumeroMamas());
                         System.out.println("Tipo de Pelo do Mamífero: "+ovino.getTipoDePelo());
                         System.out.println("\nO ovino tem chifre? "+ovino.getChifre());
+                        System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                         read.nextLine();
                     } else if(opcao == 2){
+                        System.out.println("\n| PRIMATA |");
                         System.out.println("\nNome do Animal: "+primata.getNome());
                         System.out.println("Classe do Animal: "+primata.getClasse());
                         System.out.println("Ordem do Animal: "+primata.getOrdem());
@@ -471,6 +481,7 @@ public class Principal{
                         System.out.println("\nNúmero de Mamas do Mamífero: "+primata.getNumeroMamas());
                         System.out.println("Tipo de Pelo do Mamífero: "+primata.getTipoDePelo());
                         System.out.println("\nNúmero de Dedos do Primata: "+primata.getNumeroDedos());
+                        System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                         read.nextLine();
                     }
                 } else if(opcao == 4){
@@ -491,6 +502,7 @@ public class Principal{
                     read.nextLine();
                     
                     if(opcao == 1){
+                        System.out.println("\n| COBRA |");
                         System.out.println("\nNome do Animal: "+cobra.getNome());
                         System.out.println("Classe do Animal: "+cobra.getClasse());
                         System.out.println("Ordem do Animal: "+cobra.getOrdem());
@@ -502,8 +514,10 @@ public class Principal{
                         System.out.println("\nNúmero de Patas do Reptil: "+cobra.getNumeroPatas());
                         System.out.println("\nA cobra é peçonhenta? "+cobra.getPeconha());
                         System.out.println("A cobra possui visão infravermelha? "+cobra.getSensorDeCalor());
+                        System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                         read.nextLine();
                     } else if(opcao == 2){
+                        System.out.println("\n| JACARÉ |");
                         System.out.println("\nNome do Animal: "+jacare.getNome());
                         System.out.println("Classe do Animal: "+jacare.getClasse());
                         System.out.println("Ordem do Animal: "+jacare.getOrdem());
@@ -514,8 +528,10 @@ public class Principal{
                         System.out.println("Dieta do Animal: "+jacare.getDieta());
                         System.out.println("\nNúmero de Patas do Reptil: "+jacare.getNumeroPatas());
                         System.out.println("\nNúmero de Garras do Jacaré: "+jacare.getNumeroGarras());
+                        System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                         read.nextLine();
                     } else if(opcao == 3){
+                        System.out.println("\n| OVELHA |");
                         System.out.println("\nNome do Animal: "+ovelha.getNome());
                         System.out.println("Classe do Animal: "+ovelha.getClasse());
                         System.out.println("Ordem do Animal: "+ovelha.getOrdem());
@@ -528,13 +544,13 @@ public class Principal{
                         System.out.println("Tipo de Pelo do Mamífero: "+ovelha.getTipoDePelo());
                         System.out.println("\nO ovino tem chifre? "+ovelha.getChifre());
                         System.out.println("\nA ovelha está com lã? "+ovelha.getLa());
+                        System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                         read.nextLine();
                     }
                 }
-                //----------------------------------------------------------------------------------------------
             } else if(opcao == 3){
-                
-                System.out.println("\nSelecione o que deseja mostrar:");
+                System.out.println("\n| AÇÕES |");
+                System.out.println("\nSelecione o tipo de animal que deseja fazer a ação:");
                 System.out.println("\n1 - Animal Genérico");
                 System.out.println("2 - Classe de Animal"); // Mamifero Reptil
                 System.out.println("3 - Ordem de Animal");
@@ -549,25 +565,27 @@ public class Principal{
                     opcao = read.nextInt();
                 }
                 
-                
                 if(opcao == 1){
-                 
-                    System.out.println("1 - Comer");
+                    System.out.println("\n| ANIMAL |");
+                    System.out.println("\nOpções de ações:");
+                    System.out.println("\n1 - Comer");
                     System.out.println("2 - Beber");
                     System.out.println("3 - Voltar ao MENU");
                     System.out.print("\nOpção: ");
                     opcao = read.nextInt();
                     
-                     if (opcao == 1){
-                         animal.Comer();
-                        }
-                        else if (opcao == 2){
-                            animal.beber();
-                        }
-                        else{}   
+                    while(opcao < 1 || opcao > 3){
+                        System.out.println("\nDigite novamente.");
+                        System.out.print("\nOpção: ");
+                        opcao = read.nextInt();
+                    }
                     
+                    if(opcao == 1)
+                        animal.Comer();
+                    else if(opcao == 2)
+                        animal.Beber();
                 } else if(opcao == 2){
-                    System.out.println("\nSelecione a classe que deseja mostrar:");
+                    System.out.println("\nSelecione a classe que deseja fazer a ação:");
                     System.out.println("\n1 - Mamífero");
                     System.out.println("2 - Reptil");
                     System.out.println("3 - Voltar ao MENU");
@@ -580,63 +598,73 @@ public class Principal{
                         opcao = read.nextInt();
                     }
                     
-                    
                     if(opcao == 1){
-                        // AÇÕES MAMIFEROS 
-
-                 
-                        System.out.println("1 - Comer");
+                        System.out.println("\n| MAMÍFERO |");
+                        System.out.println("\nOpções de ações:");
+                        System.out.println("\n1 - Comer");
                         System.out.println("2 - Beber");
-                        
-                        System.out.println("3 - Quem sao?");
+                        System.out.println("\n3 - Quem são?");
                         System.out.println("4 - Exemplos");
                         System.out.println("5 - Voltar ao MENU");
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
+                        
+                        while(opcao < 1 || opcao > 5){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
+                        }
                     
-                        if (opcao == 1){
-                         mamifero.Comer();
-                        }
-                        else if (opcao == 2){
-                            mamifero.beber();
-                        }
+                        read.nextLine();
                         
-                        else if (opcao == 3){
-                            mamifero.quem();
+                        if(opcao == 1)
+                            mamifero.Comer();
+                        else if(opcao == 2)
+                            mamifero.Beber();
+                        else if(opcao == 3){
+                            mamifero.Quem();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
                         }
-                            
-                        else if (opcao == 4){
-                            mamifero.ex();
+                        else if(opcao == 4){
+                            mamifero.Exemplo();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
                         }
-                        else{}
-                        
                     } else if(opcao == 2){
-                      // AÇÕES REPTEIS
+                        // AÇÕES REPTEIS
+                        System.out.println("\n| REPTIL |");
+                        System.out.println("\nOpções de ações:");
+                        System.out.println("\n1 - Comer");
+                        System.out.println("2 - Beber");
+                        System.out.println("3 - Trocas de Pele");
+                        System.out.println("4 - Despositar Ovos");
+                        System.out.println("5 - Voltar ao MENU");
 
-                      System.out.println("1 - Andar");
-                      System.out.println("2 - Comer");
-                      System.out.println("3 - Beber");
+                        System.out.print("\nOpção: ");
+                        opcao = read.nextInt();
 
-                      System.out.println("4 - Despositar Ovos");
-                      System.out.println("5 - Trocas de Pele");
-                      System.out.println("6 - Voltar ao MENU");
-
-                      System.out.print("\nOpção: ");
-                      opcao = read.nextInt();
-
-                        if (opcao == 1){
-                            reptil.Comer();
-                        }
-                        else if (opcao == 2){
-                          reptil.beber();
+                        while(opcao < 1 || opcao > 6){
+                              System.out.println("\nDigite novamente.");
+                              System.out.print("\nOpção: ");
+                              opcao = read.nextInt();
                         }
                         
-                        else if (opcao == 3){
-                            reptil.trocapele();
+                        read.nextLine();
+
+                        if(opcao == 1)
+                            reptil.Comer();
+                        else if(opcao == 2)
+                            reptil.Beber();
+                        else if(opcao == 3){
+                            reptil.TrocaPele();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
                         }
-                            
-                        else if (opcao == 4){
-                            reptil.ovo();
+                        else if(opcao == 4){
+                            reptil.Ovo();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
                         }
                     }
                 } else if(opcao == 3){
@@ -672,7 +700,7 @@ public class Principal{
                             ovino.Comer();
                         }
                         else if (opcao == 2){
-                            ovino.beber();
+                            ovino.Beber();
                         }
                         
                         else if (opcao == 3){
@@ -701,7 +729,7 @@ public class Principal{
                             primata.Comer();
                         }
                         else if (opcao == 2){
-                            primata.beber();
+                            primata.Beber();
                         }
                         
                         else if (opcao == 3){
@@ -752,7 +780,7 @@ public class Principal{
                             cobra.Comer();
                         }
                         else if (opcao == 2){
-                            cobra.beber();
+                            cobra.Beber();
                         }
 
                         else if (opcao == 3){
@@ -797,7 +825,7 @@ public class Principal{
                             jacare.Comer();
                         }
                         else if (opcao == 2){
-                            jacare.beber();
+                            jacare.Beber();
                         }
 
                         else if (opcao == 3){
@@ -842,7 +870,7 @@ public class Principal{
                             animal.Comer();
                         }
                         else if (opcao == 2){
-                          animal.beber();
+                          animal.Beber();
                         }
                         
                         else if (opcao == 3){
