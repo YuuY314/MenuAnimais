@@ -3,46 +3,37 @@ public class Primata extends Mamifero {
     private int numeroDedos;
     
     public void Banana(){
-        System.out.println("+-------------------|Minigame Primatas|---------------------+");
-                           
-                       
-System.out.println("               '.           ,#  ");
-System.out.println("               | `-._____,-'=");
-System.out.println("            ____`._ ----- _,'_____PhS");
-System.out.println("                   `-----'");
-
-System.out.println("Voce esta descascando a banana");
-
-
-System.out.println("        .-. ");
-System.out.println("       /  | ");
-System.out.println("      |   | ");
-System.out.println("   .'||.-;| _ ");
-System.out.println("  /.-.;|  ||| |");
-System.out.println("  '   |'._/ `'|");
-System.out.println("      |  | ");
-System.out.println("       |  | ");
-System.out.println("jgs     '-' ");
- System.out.println("+----------------------------------------------------------+");
+        System.out.println("\n               '.           ,#  ");
+        System.out.println("               | `-._____,-'=");
+        System.out.println("            ____`._ ----- _,'_____");
+        System.out.println("                   `-----'");
+        System.out.println("\nVocê está descascando a banana.");
+        System.out.println("\n        .-. ");
+        System.out.println("       /  | ");
+        System.out.println("      |   | ");
+        System.out.println("   .'||.-;| _ ");
+        System.out.println("  /.-.;|  ||| |");
+        System.out.println("  '   |'._/ `'|");
+        System.out.println("      |  | ");
+        System.out.println("       |  | ");
+        System.out.println("        '-' ");
+        System.out.println("\nVocê descascou a banana.");
     }
-public void sorrir(){
- System.out.println("+-------------------|Historia Primatas|---------------------+");
-System.out.println("               ___ ");
- System.out.println("            .-`-,|__ ");
- System.out.println("              .'`   `, ");
- System.out.println("            .'_.  ._  `;. ");
- System.out.println("        __ / `      `  `.| .--. ");
- System.out.println("       /--,| 0)   0)     )`_.-,)");
- System.out.println("      |    ;.-----.__ _-');   /");
- System.out.println("       '--./         `.`/  `'`");
- System.out.println("          :   '`      |.      ");
- System.out.println("          | |     /  //  ");       
- System.out.println("           | '---'  /'      ");  
- System.out.println("            `------' |  ");
- System.out.println("jgs/a:f      _/       `--...");
-
-
-}
+    public void Sorrir(){
+        System.out.println("\n               ___ ");
+        System.out.println("            .-`-,|__ ");
+        System.out.println("              .'`   `, ");
+        System.out.println("            .'_.  ._  `;. ");
+        System.out.println("        __ / `      `  `.| .--. ");
+        System.out.println("       /--,| 0)   0)     )`_.-,)");
+        System.out.println("      |    ;.-----.__ _-');   /");
+        System.out.println("       '--./         `.`/  `'`");
+        System.out.println("          :   '`      |.      ");
+        System.out.println("          | |     /  //  ");       
+        System.out.println("           | '---'  /'      ");  
+        System.out.println("            `------' |  ");
+        System.out.println("             _/       `--...");
+    }
 
     public int getNumeroDedos() {
         return numeroDedos;

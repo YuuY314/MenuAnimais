@@ -603,7 +603,7 @@ public class Principal{
                         System.out.println("\nOpções de ações:");
                         System.out.println("\n1 - Comer");
                         System.out.println("2 - Beber");
-                        System.out.println("\n3 - Quem são?");
+                        System.out.println("3 - Quem são?");
                         System.out.println("4 - Exemplos");
                         System.out.println("5 - Voltar ao MENU");
                         System.out.print("\nOpção: ");
@@ -638,13 +638,13 @@ public class Principal{
                         System.out.println("\n1 - Comer");
                         System.out.println("2 - Beber");
                         System.out.println("3 - Trocas de Pele");
-                        System.out.println("4 - Despositar Ovos");
+                        System.out.println("4 - Botar Ovos");
                         System.out.println("5 - Voltar ao MENU");
 
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
 
-                        while(opcao < 1 || opcao > 6){
+                        while(opcao < 1 || opcao > 5){
                               System.out.println("\nDigite novamente.");
                               System.out.print("\nOpção: ");
                               opcao = read.nextInt();
@@ -681,62 +681,74 @@ public class Principal{
                         opcao = read.nextInt();
                     }
                     
-                    
+                    read.nextLine();
                     
                     if(opcao == 1){
                         // AÇÕES OVINOS 
-
-                        System.out.println("1 - Andar");
-                        System.out.println("2 - Comer");
-                        System.out.println("3 - Beber");
-
-                        System.out.println("4 - Chifrada/Cabeçada");
+                        System.out.println("\n| OVINO |");
+                        System.out.println("\nOpções de ações:");
+                        System.out.println("\n1 - Comer");
+                        System.out.println("2 - Beber");
+                        System.out.println("3 - Berrar");
+                        System.out.println("4 - Chifrada");
                         System.out.println("6 - Voltar ao MENU");
 
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
-                    
-                        if (opcao == 1){
-                            ovino.Comer();
-                        }
-                        else if (opcao == 2){
-                            ovino.Beber();
+                        
+                        while(opcao < 1 || opcao > 5){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
                         }
                         
-                        else if (opcao == 3){
-                          ovino.La();
-                                  
+                        read.nextLine();
+                    
+                        if(opcao == 1)
+                            ovino.Comer();
+                        else if(opcao == 2)
+                            ovino.Beber();
+                        else if(opcao == 3){
+                            ovino.Berrar();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
                         }
-                            
-                        else if (opcao == 4){
-                            ovino.berrar();
-                        }
+                        else if (opcao == 4)
+                            ovino.Chifrada();
                     } else if(opcao == 2){
                         // AÇÕES PRIMATA
-                        
-                        System.out.println("1 - Andar");
-                        System.out.println("2 - Comer");
-                        System.out.println("3 - Beber");
-
-                        System.out.println("4 - Jogar banana");
-                        System.out.println("5 - Balanacar entre sipós");
-                        System.out.println("6 - Voltar ao MENU");
+                        System.out.println("\n| PRIMATA |");
+                        System.out.println("\nOpções de ações:");
+                        System.out.println("1 - Comer");
+                        System.out.println("2 - Beber");
+                        System.out.println("3 - Descascar Banana");
+                        System.out.println("4 - Sorrir");
+                        System.out.println("5 - Voltar ao MENU");
 
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
-                    
-                        if (opcao == 1){
-                            primata.Comer();
-                        }
-                        else if (opcao == 2){
-                            primata.Beber();
+                        
+                        while(opcao < 1 || opcao > 5){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
                         }
                         
+                        read.nextLine();
+                    
+                        if (opcao == 1)
+                            primata.Comer();
+                        else if (opcao == 2)
+                            primata.Beber();
                         else if (opcao == 3){
-                            primata.Banana();                      }
-                            
+                            primata.Banana();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
+                        }
                         else if (opcao == 4){
-                            primata.sorrir();
+                            primata.Sorrir();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
                         }
                     }
                 } else if(opcao == 4){
@@ -754,41 +766,35 @@ public class Principal{
                         opcao = read.nextInt();
                     }
                     
-                    
                     if(opcao == 1){
                         // AÇÕES  COBRA 
-
+                        System.out.println("\n| COBRA |");
+                        System.out.println("\nOpções de ações:");
                         System.out.println("1 - Comer");
                         System.out.println("2 - Beber");
-                        
                         System.out.println("3 - Trocar de Pele");
                         System.out.println("4 - Botar Ovo");
-                      
-                        System.out.println("3 - Dar bote");
-                        System.out.println("4 - Injetar veneno");
+                        System.out.println("5 - Dar Bote");
+                        System.out.println("6 - Injetar Veneno");
+                        System.out.println("7 - Voltar ao MENU");
                         
-                        System.out.println("5 - Voltar ao MENU");
-                        
-                        //Ideias para ações extras
-                      //  System.out.println("4 - Depositar ovos");
-                      //  System.out.println("5 - Trocar de pele");
-                      //  System.out.println("6 - Sibilar da Serpente");
                         System.out.print("\nOpção: ");
                         opcao = read.nextInt();
+                        
+                        while(opcao < 1 || opcao > 7){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
+                        }
 
-                        if (opcao == 1){
+                        if(opcao == 1)
                             cobra.Comer();
-                        }
-                        else if (opcao == 2){
+                        else if(opcao == 2)
                             cobra.Beber();
-                        }
-
-                        else if (opcao == 3){
-                              cobra.trocapele();
-                        }
-
+                        else if (opcao == 3)
+                             cobra.TrocaPele();
                         else if (opcao == 4){
-                           cobra.ovo();
+                           cobra.Ovo();
                         }
                         else if (opcao == 5){
                         cobra.bote();
@@ -829,11 +835,11 @@ public class Principal{
                         }
 
                         else if (opcao == 3){
-                           jacare.trocapele();
+                           jacare.TrocaPele();
                         }
 
                         else if (opcao == 4){
-                          jacare.ovo();
+                          jacare.Ovo();
                         }
                         else if (opcao == 5){
                         jacare.abocanhar();
@@ -878,10 +884,10 @@ public class Principal{
                         }
                             
                         else if (opcao == 4){
-                            ovelha.berrar();
+                            ovelha.Berrar();
                         }
                         else if (opcao == 5){
-                            ovelha.chifrada();
+                            ovelha.Chifrada();
                         }
                         else if (opcao == 6){
                             ovelha.Pastar();

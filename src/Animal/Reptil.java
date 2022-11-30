@@ -5,7 +5,7 @@ public class Reptil extends Animal {
 
     public void TrocaPele(){
         Random gerador = new Random();  
-        int dado = gerador.nextInt(75)+1;
+        int dado = gerador.nextInt(74)+1;
         
         System.out.println("\nVocê irá trocar de pele. Tome cuidado, este é um processo demorado.\n");
         System.out.println("Pronto você conseguiu depois de "+dado+" horas.");
@@ -40,13 +40,16 @@ public class Reptil extends Animal {
         System.out.print("Nome para o terceiro ovo: ");
         ovo3 = ler.nextLine();
 
-        System.out.print("\nAperte ENTER ou digite qualquer coisa para Finalizar ");
+        System.out.print("\nAperte ENTER ou digite qualquer coisa para finalizar ");
         ler.nextLine();
         
         System.out.println("\nNome do primeiro ovo: "+ovo1);
         System.out.println("Nome do segundo ovo: "+ovo2);
         System.out.println("Nome do terceiro ovo: "+ovo3);
-}
+        
+        System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+        ler.nextLine();
+    }
     
     public int getNumeroPatas() {
         return numeroPatas;

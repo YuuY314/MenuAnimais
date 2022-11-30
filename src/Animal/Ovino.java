@@ -1,58 +1,56 @@
 package Animal;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 public class Ovino extends Mamifero {
-    public void La(){
-       Random gerador = new Random();
-       Scanner prosseguir = new Scanner(System.in); 
-       Scanner entrada = new Scanner(System.in); 
-       int resposta;
-       int dado;
-       dado =0;
-       dado = gerador.nextInt(20) + 1;
-       String ler ; 
-       
-    System.out.println("+-------------------|Minigame OVINOS|---------------------+");
-    System.out.println("Voce irá tirar a lã da ovleha Shirley. Advinhe quantos kl de la que ela deu este mes.");
-    System.out.println("Voce terá de advinhar a os kl(1-20) de la que serão coletados. No total voce tera 5 tentativas.");
-    System.out.println("Dicas serão dadas ao decorrer do jogo, dizendo se o numero é maior ou menor. BOA SORTE");
-    System.out.print("\nPressione ENTER para continuar:");
-    ler = prosseguir.nextLine();
-        for (int i = 0; i < 5; i++) {
-            System.out.print("Digite:");
-            resposta = prosseguir.nextInt();
-            if(resposta>dado){
-                System.out.println("O numero e menor");}
-            else if (resposta<dado) {
-                System.out.println("O numero e maior");    
-            }
-            else if (resposta == dado) {
-                System.out.println("PARABENS VOCE ACERTOU! Shiley deu" + dado +"kl de la");
-                i=5;
-            }
-        }
-        System.out.println("\nA quantidade em ml era de: "+ dado);
-    }
-
-    public void berrar(){
-System.out.println("+-------------------|Minigame OVINOS|---------------------+");
-System.out.println("           __  _");
-System.out.println("       .-.'  `; `-._  __  _");
-System.out.println("      (_,         .-:'  `; `-._");
-System.out.println("    ,'o'(        (_,           )");
-System.out.println("   (__,-'      ,'o'(            )>");
-System.out.println("      (       (__,-'            )");
-System.out.println("       `-'._.--._(             )");
-System.out.println("          |||  |||`-'._.--._.-'");
-System.out.println("                     |||  |||");
-System.out.println("\nOvinos: BEEEEEEEEEEEEEEEEEEEEEeeeeeeeeeeeeeee");
-
-System.out.println("\n+-------------------|Minigame OVINOS|---------------------+");
-
-}
-
-    
     private String chifre;
+    
+    public void Berrar(){
+        System.out.println("           __  _");
+        System.out.println("       .-.'  `; `-._  __  _");
+        System.out.println("      (_,         .-:'  `; `-._");
+        System.out.println("    ,'o'(        (_,           )");
+        System.out.println("   (__,-'      ,'o'(            )>");
+        System.out.println("      (       (__,-'            )");
+        System.out.println("       `-'._.--._(             )");
+        System.out.println("          |||  |||`-'._.--._.-'");
+        System.out.println("                     |||  |||");
+        System.out.println("\nBEEEEEEEEEEEEEEEEEEEEEeeeeeeeeeeeeeee");
+    }
+    
+    public void Chifrada(){
+        Random gerador = new Random();
+        Scanner ler = new Scanner(System.in);  
+        int dado = gerador.nextInt(20)+1;
+        
+        System.out.println("\n+-------------------|MINIGAME OVINO|---------------------+");
+        System.out.println("Para efetuar um ataque, você terá que contar com a sorte.\n"
+        + "Jogue um dado de 1 a 20 e teste sua sorte!");
+        System.out.print("\nAperte ENTER ou digite qualquer coisa para jogar o dado ");
+        ler.nextLine();
+        
+        if(dado >= 10){
+            System.out.println("  ??????????????????????????????");
+            System.out.println("  ??????????????????????????????");
+            System.out.println("  ??????????????????????????????");
+            System.out.println("  ??????????????????????????????");
+            System.out.println("  ??????????????????????????????");
+            System.out.println("  ??????????????????????????????");
+            System.out.println("  ??????????????????????????????");
+            System.out.println("  ??????????????????????????????");
+            System.out.println("  ??????????????????????????????");
+            System.out.println("  ??????????????????????????????");
+            System.out.println("  ??????????????????????????????");
+            System.out.println("  ??????????????????????????????");
+            System.out.println("  ??????????????????????????????");
+            System.out.println("  ??????????????????????????????");                              
+            System.out.println("\nVocê conseguiu atacar a sua presa!\n"
+            + "O resultado do seu dado foi "+dado);
+        } else
+            System.out.println("\nVocê errou seu ataque. Mais sorte na próxima vez!\n"
+            + "O resultado do seu dado foi "+dado);
+        System.out.println("\n+-------------------|MINIGAME OVINO|---------------------+");
+        System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+        ler.nextLine();
+    }
 
    
     public String getChifre() {
