@@ -31,9 +31,9 @@ public class Reptil extends Animal {
         System.out.println("          `.     .' |          .' ");
         System.out.println("            `~~~`    '-.____.-' ");
 
-        System.out.print("\nDê um nome para os seus 3 filhotes:");
+        System.out.print("\nDê um nome para os seus 3 filhotes.");
         
-        System.out.print("\nNome para o primerio ovo: ");
+        System.out.print("\n\nNome para o primerio ovo: ");
         ovo1 = ler.nextLine();
         System.out.print("Nome para o segundo ovo: ");
         ovo2 = ler.nextLine();

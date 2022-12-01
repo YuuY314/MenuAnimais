@@ -15,7 +15,7 @@ public class Animal {
     public void Comer(){
         Scanner ler = new Scanner(System.in);
         
-        System.out.println("+-------------------|COMENDO|------------------+");
+        System.out.println("\n+-------------------|COMENDO|------------------+");
         System.out.println("Loading  0%");                       
         System.out.println("       :~!!!!~:.                                ");                        
         System.out.println("      .~?Y5YYYY5YJ7~:                           ");                       
@@ -38,7 +38,7 @@ public class Animal {
         System.out.print("\nAperte ENTER ou digite qualquer coisa para continuar ");
         ler.nextLine();
         
-        System.out.println("Loading 100%");
+        System.out.println("\nLoading 100%");
         System.out.println("                       :7^                      ");   
         System.out.println("                        :5~                     ");
         System.out.println("                :!?JYYJ?~~Y^7?JYYJ7~.           ");

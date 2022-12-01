@@ -886,9 +886,346 @@ public class PrincipalArrayList{
                     }
                 }
             } else if(opcao == 3){
+                System.out.println("\n| AÇÕES |");
+                System.out.println("\nSelecione o tipo de animal que deseja fazer a ação:");
+                System.out.println("\n1 - Animal Genérico");
+                System.out.println("2 - Classe de Animal"); // Mamifero Reptil
+                System.out.println("3 - Ordem de Animal");
+                System.out.println("4 - Espécie de Animal");
+                System.out.println("5 - Voltar ao MENU");
+                System.out.print("\nOpção: ");
+                opcao = read.nextInt();
                 
+                while(opcao < 1 || opcao > 5){
+                    System.out.println("\nDigite novamente.");
+                    System.out.print("\nOpção: ");
+                    opcao = read.nextInt();
+                }
+                
+                if(opcao == 1){
+                    System.out.println("\n| ANIMAL |");
+                    System.out.println("\nOpções de ações:");
+                    System.out.println("\n1 - Comer");
+                    System.out.println("2 - Beber");
+                    System.out.println("3 - Voltar ao MENU");
+                    System.out.print("\nOpção: ");
+                    opcao = read.nextInt();
+                    
+                    while(opcao < 1 || opcao > 3){
+                        System.out.println("\nDigite novamente.");
+                        System.out.print("\nOpção: ");
+                        opcao = read.nextInt();
+                    }
+                    
+                    if(opcao == 1)
+                        animal.Comer();
+                    else if(opcao == 2)
+                        animal.Beber();
+                } else if(opcao == 2){
+                    System.out.println("\nSelecione a classe que deseja fazer a ação:");
+                    System.out.println("\n1 - Mamífero");
+                    System.out.println("2 - Reptil");
+                    System.out.println("3 - Voltar ao MENU");
+                    System.out.print("\nOpção: ");
+                    opcao = read.nextInt();
+                    
+                    while(opcao < 1 || opcao > 3){
+                        System.out.println("\nDigite novamente.");
+                        System.out.print("\nOpção: ");
+                        opcao = read.nextInt();
+                    }
+                    
+                    if(opcao == 1){
+                        System.out.println("\n| MAMÍFERO |");
+                        System.out.println("\nOpções de ações:");
+                        System.out.println("\n1 - Comer");
+                        System.out.println("2 - Beber");
+                        System.out.println("3 - Quem são?");
+                        System.out.println("4 - Exemplos");
+                        System.out.println("5 - Voltar ao MENU");
+                        System.out.print("\nOpção: ");
+                        opcao = read.nextInt();
+                        
+                        while(opcao < 1 || opcao > 5){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
+                        }
+                    
+                        read.nextLine();
+                        
+                        if(opcao == 1)
+                            mamifero.Comer();
+                        else if(opcao == 2)
+                            mamifero.Beber();
+                        else if(opcao == 3){
+                            mamifero.Quem();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
+                        }
+                        else if(opcao == 4){
+                            mamifero.Exemplo();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
+                        }
+                    } else if(opcao == 2){
+                        // AÇÕES REPTEIS
+                        System.out.println("\n| REPTIL |");
+                        System.out.println("\nOpções de ações:");
+                        System.out.println("\n1 - Comer");
+                        System.out.println("2 - Beber");
+                        System.out.println("3 - Trocar de Pele");
+                        System.out.println("4 - Botar Ovos");
+                        System.out.println("5 - Voltar ao MENU");
+
+                        System.out.print("\nOpção: ");
+                        opcao = read.nextInt();
+
+                        while(opcao < 1 || opcao > 5){
+                              System.out.println("\nDigite novamente.");
+                              System.out.print("\nOpção: ");
+                              opcao = read.nextInt();
+                        }
+                        
+                        read.nextLine();
+
+                        if(opcao == 1)
+                            reptil.Comer();
+                        else if(opcao == 2)
+                            reptil.Beber();
+                        else if(opcao == 3){
+                            reptil.TrocaPele();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
+                        }
+                        else if(opcao == 4)
+                            reptil.Ovo();
+                    }
+                } else if(opcao == 3){
+                    System.out.println("\nSelecione a ordem que deseja fazer a ação:");
+                    System.out.println("\n1 - Ovino");
+                    System.out.println("2 - Primata");
+                    System.out.println("3 - Voltar ao MENU");
+                    System.out.print("\nOpção: ");
+                    opcao = read.nextInt();
+                    
+                    while(opcao < 1 || opcao > 3){
+                        System.out.println("\nDigite novamente.");
+                        System.out.print("\nOpção: ");
+                        opcao = read.nextInt();
+                    }
+                    
+                    read.nextLine();
+                    
+                    if(opcao == 1){
+                        // AÇÕES OVINOS 
+                        System.out.println("\n| OVINO |");
+                        System.out.println("\nOpções de ações:");
+                        System.out.println("\n1 - Comer");
+                        System.out.println("2 - Beber");
+                        System.out.println("3 - Berrar");
+                        System.out.println("4 - Chifrada");
+                        System.out.println("5 - Voltar ao MENU");
+
+                        System.out.print("\nOpção: ");
+                        opcao = read.nextInt();
+                        
+                        while(opcao < 1 || opcao > 5){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
+                        }
+                        
+                        read.nextLine();
+                    
+                        if(opcao == 1)
+                            ovino.Comer();
+                        else if(opcao == 2)
+                            ovino.Beber();
+                        else if(opcao == 3){
+                            ovino.Berrar();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
+                        }
+                        else if (opcao == 4)
+                            ovino.Chifrada();
+                    } else if(opcao == 2){
+                        // AÇÕES PRIMATA
+                        System.out.println("\n| PRIMATA |");
+                        System.out.println("\nOpções de ações:");
+                        System.out.println("\n1 - Comer");
+                        System.out.println("2 - Beber");
+                        System.out.println("3 - Descascar Banana");
+                        System.out.println("4 - Sorrir");
+                        System.out.println("5 - Voltar ao MENU");
+
+                        System.out.print("\nOpção: ");
+                        opcao = read.nextInt();
+                        
+                        while(opcao < 1 || opcao > 5){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
+                        }
+                        
+                        read.nextLine();
+                    
+                        if (opcao == 1)
+                            primata.Comer();
+                        else if (opcao == 2)
+                            primata.Beber();
+                        else if (opcao == 3){
+                            primata.Banana();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
+                        }
+                        else if (opcao == 4){
+                            primata.Sorrir();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
+                        }
+                    }
+                } else if(opcao == 4){
+                    System.out.println("\nSelecione a espécie que deseja fazer a ação:");
+                    System.out.println("\n1 - Cobra");
+                    System.out.println("2 - Jacaré");
+                    System.out.println("3 - Ovelha");
+                    System.out.println("4 - Voltar ao MENU");
+                    System.out.print("\nOpção: ");
+                    opcao = read.nextInt();
+                    
+                    while(opcao < 1 || opcao > 4){
+                        System.out.println("\nDigite novamente.");
+                        System.out.print("\nOpção: ");
+                        opcao = read.nextInt();
+                    }
+                    
+                    if(opcao == 1){
+                        // AÇÕES  COBRA 
+                        System.out.println("\n| COBRA |");
+                        System.out.println("\nOpções de ações:");
+                        System.out.println("\n1 - Comer");
+                        System.out.println("2 - Beber");
+                        System.out.println("3 - Trocar de Pele");
+                        System.out.println("4 - Botar Ovo");
+                        System.out.println("5 - Dar Bote");
+                        System.out.println("6 - Injetar Veneno");
+                        System.out.println("7 - Voltar ao MENU");
+                        
+                        System.out.print("\nOpção: ");
+                        opcao = read.nextInt();
+                        
+                        while(opcao < 1 || opcao > 7){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
+                        }
+                        
+                        read.nextLine();
+
+                        if(opcao == 1)
+                            cobra.Comer();
+                        else if(opcao == 2)
+                            cobra.Beber();
+                        else if (opcao == 3){
+                            cobra.TrocaPele();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
+                        }
+                        else if(opcao == 4)
+                            cobra.Ovo();
+                        else if(opcao == 5)
+                            cobra.Bote();
+                        else if(opcao == 6)
+                            cobra.Veneno();
+                    } else if(opcao == 2){
+                        // AÇÕES  JACARÉ
+                        System.out.println("\n| JACARÉ |");
+                        System.out.println("\nOpções de ações:");
+                        System.out.println("\n1 - Comer");
+                        System.out.println("2 - Beber");
+                        System.out.println("3 - Trocar de Pele");
+                        System.out.println("4 - Botar Ovo");
+                        System.out.println("5 - Abocanhar");
+                        System.out.println("6 - Nadar");
+                        System.out.println("7 - Voltar ao MENU");
+                        
+                        System.out.print("\nOpção: ");
+                        opcao = read.nextInt();
+                        
+                        while(opcao < 1 || opcao > 7){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
+                        }
+                        
+                        read.nextLine();
+
+                        if(opcao == 1)
+                            jacare.Comer();
+                        else if(opcao == 2)
+                            jacare.Beber();
+                        else if (opcao == 3){
+                            jacare.TrocaPele();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
+                        }
+                        else if(opcao == 4)
+                            jacare.Ovo();
+                        else if(opcao == 5)
+                            jacare.Abocanhar();
+                        else if(opcao == 6){
+                            jacare.Nadar();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
+                        }
+                    } else if(opcao == 3){
+                        // AÇÕES  OVELHAS  
+                        System.out.println("\n| OVELHA |");
+                        System.out.println("\nOpções de ações:");
+                        System.out.println("\n1 - Comer");
+                        System.out.println("2 - Beber");
+                        System.out.println("3 - Berrar");
+                        System.out.println("4 - Chifrada");
+                        System.out.println("5 - Tirar Lã");
+                        System.out.println("6 - Pastar");
+                        System.out.println("7 - Voltar ao MENU");
+                    
+                        System.out.print("\nOpção: ");
+                        opcao = read.nextInt();
+                        
+                        while(opcao < 1 || opcao > 7){
+                            System.out.println("\nDigite novamente.");
+                            System.out.print("\nOpção: ");
+                            opcao = read.nextInt();
+                        }
+                        
+                        read.nextLine();
+                    
+                        if(opcao == 1)
+                            ovelha.Comer();
+                        else if(opcao == 2)
+                            ovelha.Beber();
+                        else if(opcao == 3){
+                            ovelha.Berrar();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
+                        }
+                        else if(opcao == 4)
+                            ovelha.Chifrada();
+                        else if(opcao == 5)
+                            ovelha.La();
+                        else if(opcao == 6){
+                            ovelha.Pastar();
+                            System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                            read.nextLine();
+                        }
+                    }
+                }
             } else if(opcao == 4){
-                
+                System.out.println("\nPrograma feito por Luan Gibson e Rafael Yu");
+                System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
+                read.nextLine();
             } else {
                 System.out.println("\nVocê saiu.");
                 rodando = false;
