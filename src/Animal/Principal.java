@@ -34,7 +34,7 @@ public class Principal{
             read.nextLine();
             
             if(opcao == 1){
-                System.out.println("\n| CADASTRO |");
+                System.out.println("\n| CADASTRAR |");
                 System.out.println("\nSelecione o que deseja cadastrar:");
                 System.out.println("\n1 - Animal Genérico");//ex: Animal
                 System.out.println("2 - Classe de Animal");//ex: Mamífero e Réptil
@@ -886,10 +886,12 @@ public class Principal{
                     }
                 }
             } else if(opcao == 4){
+                System.out.println("\n| CRÉDITOS |");
                 System.out.println("\nPrograma feito por Luan Gibson e Rafael Yu");
                 System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                 read.nextLine();
             } else {
+                System.out.println("\n| SAIR |");
                 System.out.println("\nVocê saiu.");
                 rodando = false;
             }

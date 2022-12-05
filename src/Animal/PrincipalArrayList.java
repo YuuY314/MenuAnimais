@@ -25,36 +25,37 @@ public class PrincipalArrayList{
         ArrayList<Ovelha> vOvelha = new ArrayList();
         
         while(rodando){
-            System.out.println("\nMENU");
+            System.out.println("\n| MENU |");
             System.out.println("\n1 - Cadastrar");
             System.out.println("2 - Mostrar");
             System.out.println("3 - Ações");
             System.out.println("4 - Créditos");
             System.out.println("5 - Sair");
-            System.out.print("\nOpção: ");
+            System.out.print("\nOpções: ");
             opcao = read.nextInt();
 
             while(opcao < 1 || opcao > 5){
                 System.out.println("\nDigite novamente.");
-                System.out.print("\nOpção: ");
+                System.out.print("\nOpções: ");
                 opcao = read.nextInt();
             }
             
             read.nextLine();
             
             if(opcao == 1){
+                System.out.println("\n| CADASTRAR |");
                 System.out.println("\nSelecione o que deseja cadastrar:");
                 System.out.println("\n1 - Animal Genérico");//ex: Animal
-                System.out.println("2 - Classe de Animal");//ex: Mamífero e Réptil
+                System.out.println("2 - Classe de Animal");//ex: Mamífero e Reptil
                 System.out.println("3 - Ordem de Animal");//ex: Ovino e Primata
                 System.out.println("4 - Espécie de Animal");//ex: Cobra, Jacaré e Ovelha
                 System.out.println("5 - Voltar ao MENU");
-                System.out.print("\nOpção: ");
+                System.out.print("\nOpções: ");
                 opcao = read.nextInt();
                 
                 while(opcao < 1 || opcao > 5){
                     System.out.println("\nDigite novamente.");
-                    System.out.print("\nOpção: ");
+                    System.out.print("\nOpções: ");
                     opcao = read.nextInt();
                 }
                 
@@ -85,15 +86,15 @@ public class PrincipalArrayList{
                 } else if(opcao == 2){
                     System.out.println("\nSelecione qual classe de animal quer cadastrar:");
                     System.out.println("\n1 - Mamífero");
-                    System.out.println("2 - Réptil");
+                    System.out.println("2 - Reptil");
                     System.out.println("3 - Voltar ao MENU");
 
-                    System.out.print("\nOpção: ");
+                    System.out.print("\nOpções: ");
                     opcao = read.nextInt();
                     
                     while(opcao < 1 || opcao > 3){
                         System.out.println("\nDigite novamente.");
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                     }
                     
@@ -159,12 +160,12 @@ public class PrincipalArrayList{
                     System.out.println("2 - Primata");
                     System.out.println("3 - Voltar ao MENU");
 
-                    System.out.print("\nOpção: ");
+                    System.out.print("\nOpções: ");
                     opcao = read.nextInt();
                     
                     while(opcao < 1 || opcao > 3){
                         System.out.println("\nDigite novamente.");
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                     }
                     
@@ -203,7 +204,7 @@ public class PrincipalArrayList{
                         
                         while(!resposta.equalsIgnoreCase("SIM") && !resposta.equalsIgnoreCase("S") && !resposta.equalsIgnoreCase("NÃO") && !resposta.equalsIgnoreCase("N")){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             resposta = read.nextLine();
                         }
                         
@@ -248,12 +249,12 @@ public class PrincipalArrayList{
                     System.out.println("3 - Ovelha");
                     System.out.println("4 - Voltar ao MENU");
 
-                    System.out.print("\nOpção: ");
+                    System.out.print("\nOpções: ");
                     opcao = read.nextInt();
                     
                     while(opcao < 1 || opcao > 4){
                         System.out.println("\nDigite novamente.");
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                     }
                     
@@ -289,7 +290,7 @@ public class PrincipalArrayList{
                         
                         while(!resposta.equalsIgnoreCase("SIM") && !resposta.equalsIgnoreCase("S") && !resposta.equalsIgnoreCase("NÃO") && !resposta.equalsIgnoreCase("N")){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             resposta = read.nextLine();
                         }
                         
@@ -300,7 +301,7 @@ public class PrincipalArrayList{
                         
                         while(!resposta.equalsIgnoreCase("SIM") && !resposta.equalsIgnoreCase("S") && !resposta.equalsIgnoreCase("NÃO") && !resposta.equalsIgnoreCase("N")){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             resposta = read.nextLine();
                         }
                         
@@ -367,7 +368,7 @@ public class PrincipalArrayList{
                         
                         while(!resposta.equalsIgnoreCase("SIM") && !resposta.equalsIgnoreCase("S") && !resposta.equalsIgnoreCase("NÃO") && !resposta.equalsIgnoreCase("N")){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             resposta = read.nextLine();
                         }
                         
@@ -378,7 +379,7 @@ public class PrincipalArrayList{
                         
                         while(!resposta.equalsIgnoreCase("SIM") && !resposta.equalsIgnoreCase("S") && !resposta.equalsIgnoreCase("NÃO") && !resposta.equalsIgnoreCase("N")){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             resposta = read.nextLine();
                         }
                         
@@ -387,18 +388,19 @@ public class PrincipalArrayList{
                     }
                 }
             } else if(opcao == 2){
+                System.out.println("\n| MOSTRAR |");
                 System.out.println("\nSelecione o que deseja mostrar:");
                 System.out.println("\n1 - Animal Genérico");
                 System.out.println("2 - Classe de Animal");
                 System.out.println("3 - Ordem de Animal");
-                System.out.println("4 - Espécie de Animal");
+                System.out.println("4 - espécie de Animal");
                 System.out.println("5 - Voltar ao MENU");
-                System.out.print("\nOpção: ");
+                System.out.print("\nOpções: ");
                 opcao = read.nextInt();
                 
                 while(opcao < 1 || opcao > 5){
                     System.out.println("\nDigite novamente.");
-                    System.out.print("\nOpção: ");
+                    System.out.print("\nOpções: ");
                     opcao = read.nextInt();
                 }
                 
@@ -414,12 +416,12 @@ public class PrincipalArrayList{
                     System.out.println("\n100 - TODOS");
                     System.out.println("999 - Voltar ao MENU");
                     
-                    System.out.print("\nOpção: ");
+                    System.out.print("\nOpções: ");
                     opcao = read.nextInt();
                     
                     while(opcao < 0 || opcao > vAnimal.lastIndexOf(animal) && opcao != 100 && opcao != 999){
                         System.out.println("\nDigite novamente.");
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                     }
                     
@@ -458,19 +460,19 @@ public class PrincipalArrayList{
                     System.out.println("\n1 - Mamífero");
                     System.out.println("2 - Reptil");
                     System.out.println("3 - Voltar ao MENU");
-                    System.out.print("\nOpção: ");
+                    System.out.print("\nOpções: ");
                     opcao = read.nextInt();
                     
                     while(opcao < 1 || opcao > 3){
                         System.out.println("\nDigite novamente.");
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                     }
                     
                     read.nextLine();
                     
                     if(opcao == 1){
-                        System.out.println("\nSelecione qual mamífero quer mostrar: \n");
+                        System.out.println("\nSelecione qual Mamífero quer mostrar: \n");
                         
                         for (int i = 0; i < vMamifero.size(); i++) {
                             System.out.println(i+" - "+vMamifero.get(i).getNome());
@@ -479,12 +481,12 @@ public class PrincipalArrayList{
                         System.out.println("\n100 - TODOS");
                         System.out.println("999 - Voltar ao MENU");
 
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                         
                         while(opcao < 0 || opcao > vMamifero.lastIndexOf(mamifero) && opcao != 100 && opcao != 999){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             opcao = read.nextInt();
                         }
 
@@ -532,12 +534,12 @@ public class PrincipalArrayList{
                         System.out.println("\n100 - TODOS");
                         System.out.println("999 - Voltar ao MENU");
 
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                         
                         while(opcao < 0 || opcao > vReptil.lastIndexOf(reptil) && opcao != 100 && opcao != 999){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             opcao = read.nextInt();
                         }
 
@@ -579,12 +581,12 @@ public class PrincipalArrayList{
                     System.out.println("\n1 - Ovino");
                     System.out.println("2 - Primata");
                     System.out.println("3 - Voltar ao MENU");
-                    System.out.print("\nOpção: ");
+                    System.out.print("\nOpções: ");
                     opcao = read.nextInt();
                     
                     while(opcao < 1 || opcao > 3){
                         System.out.println("\nDigite novamente.");
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                     }
                     
@@ -600,12 +602,12 @@ public class PrincipalArrayList{
                         System.out.println("\n100 - TODOS");
                         System.out.println("999 - Voltar ao MENU");
 
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                         
                         while(opcao < 0 || opcao > vOvino.lastIndexOf(ovino) && opcao != 100 && opcao != 999){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             opcao = read.nextInt();
                         }
                         
@@ -655,12 +657,12 @@ public class PrincipalArrayList{
                         System.out.println("\n100 - TODOS");
                         System.out.println("999 - Voltar ao MENU");
 
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
 
                         while(opcao < 0 || opcao > vPrimata.lastIndexOf(primata) && opcao != 100 && opcao != 999){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             opcao = read.nextInt();
                         }
                         
@@ -707,12 +709,12 @@ public class PrincipalArrayList{
                     System.out.println("2 - Jacaré");
                     System.out.println("3 - Ovelha");
                     System.out.println("4 - Voltar ao MENU");
-                    System.out.print("\nOpção: ");
+                    System.out.print("\nOpções: ");
                     opcao = read.nextInt();
                     
                     while(opcao < 1 || opcao > 4){
                         System.out.println("\nDigite novamente.");
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                     }
                     
@@ -728,12 +730,12 @@ public class PrincipalArrayList{
                         System.out.println("\n100 - TODOS");
                         System.out.println("999 - Voltar ao MENU");
 
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                         
                         while(opcao < 0 || opcao > vCobra.lastIndexOf(cobra) && opcao != 100 && opcao != 999){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             opcao = read.nextInt();
                         }
 
@@ -774,7 +776,7 @@ public class PrincipalArrayList{
                             read.nextLine();
                         }
                     } else if(opcao == 2){
-                        System.out.println("\nSelecione qual jacaré quer mostrar: \n");
+                        System.out.println("\nSelecione qual Jacaré quer mostrar: \n");
 
                         for (int i = 0; i < vJacare.size(); i++) {
                             System.out.println(i+" - "+vJacare.get(i).getNome());
@@ -783,12 +785,12 @@ public class PrincipalArrayList{
                         System.out.println("\n100 - TODOS");
                         System.out.println("999 - Voltar ao MENU");
 
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                         
                         while(opcao < 0 || opcao > vJacare.lastIndexOf(jacare) && opcao != 100 && opcao != 999){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             opcao = read.nextInt();
                         }
 
@@ -836,12 +838,12 @@ public class PrincipalArrayList{
                         System.out.println("\n100 - TODOS");
                         System.out.println("999 - Voltar ao MENU");
 
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                         
                         while(opcao < 0 || opcao > vOvelha.lastIndexOf(ovelha) && opcao != 100 && opcao != 999){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             opcao = read.nextInt();
                         }
 
@@ -891,14 +893,14 @@ public class PrincipalArrayList{
                 System.out.println("\n1 - Animal Genérico");
                 System.out.println("2 - Classe de Animal"); // Mamifero Reptil
                 System.out.println("3 - Ordem de Animal");
-                System.out.println("4 - Espécie de Animal");
+                System.out.println("4 - espécie de Animal");
                 System.out.println("5 - Voltar ao MENU");
-                System.out.print("\nOpção: ");
+                System.out.print("\nOpções: ");
                 opcao = read.nextInt();
                 
                 while(opcao < 1 || opcao > 5){
                     System.out.println("\nDigite novamente.");
-                    System.out.print("\nOpção: ");
+                    System.out.print("\nOpções: ");
                     opcao = read.nextInt();
                 }
                 
@@ -908,12 +910,12 @@ public class PrincipalArrayList{
                     System.out.println("\n1 - Comer");
                     System.out.println("2 - Beber");
                     System.out.println("3 - Voltar ao MENU");
-                    System.out.print("\nOpção: ");
+                    System.out.print("\nOpções: ");
                     opcao = read.nextInt();
                     
                     while(opcao < 1 || opcao > 3){
                         System.out.println("\nDigite novamente.");
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                     }
                     
@@ -926,12 +928,12 @@ public class PrincipalArrayList{
                     System.out.println("\n1 - Mamífero");
                     System.out.println("2 - Reptil");
                     System.out.println("3 - Voltar ao MENU");
-                    System.out.print("\nOpção: ");
+                    System.out.print("\nOpções: ");
                     opcao = read.nextInt();
                     
                     while(opcao < 1 || opcao > 3){
                         System.out.println("\nDigite novamente.");
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                     }
                     
@@ -943,12 +945,12 @@ public class PrincipalArrayList{
                         System.out.println("3 - Quem são?");
                         System.out.println("4 - Exemplos");
                         System.out.println("5 - Voltar ao MENU");
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                         
                         while(opcao < 1 || opcao > 5){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             opcao = read.nextInt();
                         }
                     
@@ -969,7 +971,6 @@ public class PrincipalArrayList{
                             read.nextLine();
                         }
                     } else if(opcao == 2){
-                        // AÇÕES REPTEIS
                         System.out.println("\n| REPTIL |");
                         System.out.println("\nOpções de ações:");
                         System.out.println("\n1 - Comer");
@@ -978,12 +979,12 @@ public class PrincipalArrayList{
                         System.out.println("4 - Botar Ovos");
                         System.out.println("5 - Voltar ao MENU");
 
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
 
                         while(opcao < 1 || opcao > 5){
                               System.out.println("\nDigite novamente.");
-                              System.out.print("\nOpção: ");
+                              System.out.print("\nOpções: ");
                               opcao = read.nextInt();
                         }
                         
@@ -1006,19 +1007,18 @@ public class PrincipalArrayList{
                     System.out.println("\n1 - Ovino");
                     System.out.println("2 - Primata");
                     System.out.println("3 - Voltar ao MENU");
-                    System.out.print("\nOpção: ");
+                    System.out.print("\nOpções: ");
                     opcao = read.nextInt();
                     
                     while(opcao < 1 || opcao > 3){
                         System.out.println("\nDigite novamente.");
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                     }
                     
                     read.nextLine();
                     
                     if(opcao == 1){
-                        // AÇÕES OVINOS 
                         System.out.println("\n| OVINO |");
                         System.out.println("\nOpções de ações:");
                         System.out.println("\n1 - Comer");
@@ -1027,12 +1027,12 @@ public class PrincipalArrayList{
                         System.out.println("4 - Chifrada");
                         System.out.println("5 - Voltar ao MENU");
 
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                         
                         while(opcao < 1 || opcao > 5){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             opcao = read.nextInt();
                         }
                         
@@ -1050,7 +1050,6 @@ public class PrincipalArrayList{
                         else if (opcao == 4)
                             ovino.Chifrada();
                     } else if(opcao == 2){
-                        // AÇÕES PRIMATA
                         System.out.println("\n| PRIMATA |");
                         System.out.println("\nOpções de ações:");
                         System.out.println("\n1 - Comer");
@@ -1059,12 +1058,12 @@ public class PrincipalArrayList{
                         System.out.println("4 - Sorrir");
                         System.out.println("5 - Voltar ao MENU");
 
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                         
                         while(opcao < 1 || opcao > 5){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             opcao = read.nextInt();
                         }
                         
@@ -1091,17 +1090,16 @@ public class PrincipalArrayList{
                     System.out.println("2 - Jacaré");
                     System.out.println("3 - Ovelha");
                     System.out.println("4 - Voltar ao MENU");
-                    System.out.print("\nOpção: ");
+                    System.out.print("\nOpções: ");
                     opcao = read.nextInt();
                     
                     while(opcao < 1 || opcao > 4){
                         System.out.println("\nDigite novamente.");
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                     }
                     
                     if(opcao == 1){
-                        // AÇÕES  COBRA 
                         System.out.println("\n| COBRA |");
                         System.out.println("\nOpções de ações:");
                         System.out.println("\n1 - Comer");
@@ -1112,12 +1110,12 @@ public class PrincipalArrayList{
                         System.out.println("6 - Injetar Veneno");
                         System.out.println("7 - Voltar ao MENU");
                         
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                         
                         while(opcao < 1 || opcao > 7){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             opcao = read.nextInt();
                         }
                         
@@ -1139,7 +1137,6 @@ public class PrincipalArrayList{
                         else if(opcao == 6)
                             cobra.Veneno();
                     } else if(opcao == 2){
-                        // AÇÕES  JACARÉ
                         System.out.println("\n| JACARÉ |");
                         System.out.println("\nOpções de ações:");
                         System.out.println("\n1 - Comer");
@@ -1150,12 +1147,12 @@ public class PrincipalArrayList{
                         System.out.println("6 - Nadar");
                         System.out.println("7 - Voltar ao MENU");
                         
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                         
                         while(opcao < 1 || opcao > 7){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             opcao = read.nextInt();
                         }
                         
@@ -1180,23 +1177,22 @@ public class PrincipalArrayList{
                             read.nextLine();
                         }
                     } else if(opcao == 3){
-                        // AÇÕES  OVELHAS  
                         System.out.println("\n| OVELHA |");
                         System.out.println("\nOpções de ações:");
                         System.out.println("\n1 - Comer");
                         System.out.println("2 - Beber");
                         System.out.println("3 - Berrar");
                         System.out.println("4 - Chifrada");
-                        System.out.println("5 - Tirar Lã");
+                        System.out.println("5 - Tirar Lï¿½");
                         System.out.println("6 - Pastar");
                         System.out.println("7 - Voltar ao MENU");
                     
-                        System.out.print("\nOpção: ");
+                        System.out.print("\nOpções: ");
                         opcao = read.nextInt();
                         
                         while(opcao < 1 || opcao > 7){
                             System.out.println("\nDigite novamente.");
-                            System.out.print("\nOpção: ");
+                            System.out.print("\nOpções: ");
                             opcao = read.nextInt();
                         }
                         
@@ -1223,10 +1219,12 @@ public class PrincipalArrayList{
                     }
                 }
             } else if(opcao == 4){
+                System.out.println("\n| CRÉDITOS |");
                 System.out.println("\nPrograma feito por Luan Gibson e Rafael Yu");
                 System.out.print("\nAperte ENTER ou digite qualquer coisa para Voltar ao MENU ");
                 read.nextLine();
             } else {
+                System.out.println("\n| SAIR |");
                 System.out.println("\nVocê saiu.");
                 rodando = false;
             }
